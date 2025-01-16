@@ -10,15 +10,17 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
 
 ### Node.js with Volta
 
-[Volta Guide]('https://docs.volta.sh/guide/getting-started')
+[Volta Guide](https://docs.volta.sh/guide/getting-started)
 
 #### Unix Installation
+
 ```shell
 curl https://get.volta.sh | bash
 volta install node@22
 ```
 
 #### Windows Installation
+
 ```shell
 winget install Volta.Volta
 volta install node@22
@@ -26,12 +28,11 @@ volta install node@22
 
 ### pnpm
 
-[pnpm Guide]('https://docs.volta.sh/guide/getting-started')
+[pnpm Guide](https://docs.volta.sh/guide/getting-started)
 
 ```bash
 npm install -g pnpm@10
 ```
-
 
 ## Installing and Running the Examples
 
