@@ -63,7 +63,6 @@ function code_1_19() {
   console.log(arrayIterator.next()); // { value: 3, done: false }
   console.log(arrayIterator.next()); // { value: undefined, done: true }
 
-  // for...of 문을 사용하여 새로운 이터레이터를 만들어 순회합니다.
   for (const value of array) {
     console.log(value);
   }
@@ -81,7 +80,6 @@ function code_1_20() {
   console.log(setIterator.next()); // { value: 3, done: false }
   console.log(setIterator.next()); // { value: undefined, done: true }
 
-  // for...of 문을 사용하여 새로운 이터레이터를 만들어 순회합니다.
   for (const value of set) {
     console.log(value);
   }
@@ -103,7 +101,6 @@ function code_1_21_22_23_24() {
   console.log(mapIterator.next()); // { value: ['c', 3], done: false }
   console.log(mapIterator.next()); // { value: undefined, done: true }
 
-  // for...of 문을 사용하여 새로운 이터레이터를 만들어 순회합니다.
   for (const [key, value] of map) {
     console.log(`${key}: ${value}`);
   }
@@ -118,7 +115,6 @@ function code_1_21_22_23_24() {
   console.log(mapEntries.next()); // { value: ['c', 3], done: false }
   console.log(mapEntries.next()); // { value: undefined, done: true }
 
-  // for...of 문을 사용하여 새로운 이터레이터를 만들어 순회합니다.
   for (const entry of map.entries()) {
     console.log(entry);
   }
@@ -130,7 +126,6 @@ function code_1_21_22_23_24() {
 
   console.log(mapValues.next()); // { value: 1, done: false }
 
-  // for...of 문을 사용하여 나머지 값을 순회합니다.
   for (const value of mapValues) {
     console.log(value);
   }
@@ -141,7 +136,6 @@ function code_1_21_22_23_24() {
 
   console.log(mapKeys.next()); // { value: 'a', done: false }
 
-  // for...of 문을 사용하여 나머지 키를 순회합니다.
   for (const key of mapKeys) {
     console.log(key);
   }
@@ -166,7 +160,6 @@ function code_1_26() {
 function code_1_27() {
   const numbers = [1, 2, 3];
 
-  // 매개변수를 rest parameter로 변경
   function sum(...nums: number[]): number {
     return nums.reduce((a, b) => a + b, 0);
   }

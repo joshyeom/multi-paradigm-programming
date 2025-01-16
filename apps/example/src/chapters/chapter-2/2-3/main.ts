@@ -1,4 +1,4 @@
-import {map, filter, forEach, naturals, reduce, fx2, FxIterable} from '../../../lib/fx2';
+import { map, filter, forEach, naturals, reduce, fx2, FxIterable } from '../../../lib/fx2';
 
 function code_2_28_29() {
   class FxIterable<A> {

@@ -70,7 +70,6 @@ function code_5_55() {
   }));
 
   console.log(transformedTree);
-  // 결과:
   // [
   //   { name: "parent-1", children: [ { name: "child-2" }, { name: "child-3" } ] },
   //   { name: "parent-4", children: [ { name: "child-5" } ] }
@@ -89,9 +88,9 @@ function code_5_56() {
   const generateCalendar = (prevMonthEnd: Date, currentMonthEnd: Date) =>
     pipe(
       flat([
-        getMonthEndDates(prevMonthEnd), // range(29, 31) -> 9월 29일 ~ 30일
-        range(1, currentMonthEnd.getDate() + 1), // range(1, 32) 10월 1 ~ 31일
-        range(1, 7 - currentMonthEnd.getDay()) // range(1, 3) 11월 1 ~ 2일
+        getMonthEndDates(prevMonthEnd),
+        range(1, currentMonthEnd.getDate() + 1),
+        range(1, 7 - currentMonthEnd.getDay())
       ]),
       chunk(7),
       toArray,
@@ -108,15 +107,14 @@ function code_5_56() {
   const renderCalendar = (year: number, month: number) =>
     pipe(
       generateCalendar(
-        new Date(year, month - 1, 0), // 전달 마지막 날
-        new Date(year, month, 0) // 이번 달 마지막 날
+        new Date(year, month - 1, 0),
+        new Date(year, month, 0)
       ),
       formatCalendar,
       console.log
     );
 
   renderCalendar(2024, 10);
-  // 결과 (2024년 10월):
   // 29 30  1  2  3  4  5
   //  6  7  8  9 10 11 12
   // 13 14 15 16 17 18 19
@@ -182,7 +180,6 @@ function code_5_64_66() {
     }
   ];
 
-  // 각 댓글과 답글을 배열로 병합 후, 평탄화하여 단일 배열 생성
   fx(comments)
     .map(({ id, text, replies }) => [{ id, text }, ...replies])
     .flat()

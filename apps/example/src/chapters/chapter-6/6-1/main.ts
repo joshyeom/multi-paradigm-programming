@@ -20,10 +20,10 @@ function code_6_1() {
 
 function code_6_2() {
   function html(strs: TemplateStringsArray, ...vals: string[]) {
-    vals.push('');      // strs의 길이에 맞추기 위해 빈 문자열을 추가
+    vals.push('');
     return pipe(
-      zip(strs, vals),  // strs와 vals를 순서대로 결합하여 튜플 이터레이터를 생성
-      toArray           // 튜플 이터레이터를 평가하여 배열로 반환
+      zip(strs, vals),
+      toArray
     );
   }
 
@@ -39,12 +39,12 @@ function code_6_2() {
 
 function code_6_3() {
   function html(strs: TemplateStringsArray, ...vals: string[]) {
-    vals.push('');              // strs의 길이에 맞추기 위해 빈 문자열을 추가
+    vals.push('');
     return pipe(
-      vals,                     // 커링을 활용해 zip(strs)(vals)로 실행되도록 변경
-      zip(strs),                // strs와 vals를 순서대로 결합하여 튜플 이터레이터를 생성
-      flat,                     // 튜플 형태를 평탄화하여 단일 이터레이터로 변환
-      reduce((a, b) => a + b),  // 하나의 문자열로 누적
+      vals,
+      zip(strs),
+      flat,
+      reduce((a, b) => a + b),
     );
   }
 
@@ -59,10 +59,9 @@ function code_6_3() {
 }
 
 function code_6_4() {
-  // 하나의 표현식으로 구성된 html 함수 (화살표 함수)
   const html = (strs: TemplateStringsArray, ...vals: string[]) =>
     pipe(
-      concat(vals, ['']), // push 대신 concat으로 길이 맞추기
+      concat(vals, ['']),
       zip(strs),
       flat,
       reduce((a, b) => a + b)
@@ -81,8 +80,8 @@ function code_6_4a() {
   const html = (strs: TemplateStringsArray, ...vals: string[]) =>
     pipe(
       vals,
-      append(''),   // vals 뒤에 ''을 append한 새로운 이터레이터를 만들고
-      zip(strs),    // zip(strs, appendedVals)와 동일
+      append(''),
+      zip(strs),
       flat,
       reduce((a, b) => a + b)
     );
@@ -128,7 +127,7 @@ function code_6_7() {
   const html = (strs: TemplateStringsArray, ...vals: unknown[]) =>
     pipe(
       vals,
-      map(escapeHtml),  // vals의 각 값에 escapeHtml 적용 (XSS 예방)
+      map(escapeHtml),
       append(''),
       zip(strs),
       flat,
@@ -154,7 +153,7 @@ function code_6_8() {
   const html = (strs: TemplateStringsArray, ...vals: unknown[]) =>
     pipe(
       vals,
-      map(escapeHtml),  // vals의 각 값에 escapeHtml 적용 (XSS 예방)
+      map(escapeHtml),
       append(''),
       zip(strs),
       flat,
@@ -178,25 +177,16 @@ function code_6_8() {
       <li>${a}</li>
       <li>${b}</li>
       ${menuHtml(menu)}
-      ${html`<li>${html`<b>3단계 중첩</b>`}</li>`}
+      ${html`<li>${html`<b>3-step nesting</b>`}</li>`}
     </ul>
   `;
 
   console.log(result);
-  // 현재 출력:
   // <ul>
   //   <li>&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;</li>
   //   <li>Hello &amp; Welcome!</li>
   //   &lt;li&gt;Choco Latte &amp; Cookie (8000)&lt;/li&gt;
-  //   &lt;li&gt;&lt;b&gt;3단계 중첩&lt;/b&gt;&lt;/li&gt;
-  // </ul>
-  //
-  // 원하는 결과(컴포넌트로 분리한 HTML이 이스케이프되지 않기를 기대):
-  // <ul>
-  //   <li>&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;</li>
-  //   <li>Hello &amp; Welcome!</li>
-  //   <li>Choco Latte &amp; Cookie (8000)</li>
-  //   <li><b>3단계 중첩</b></li>
+  //   &lt;li&gt;&lt;b&gt;3-step nesting&lt;/b&gt;&lt;/li&gt;
   // </ul>
 }
 
@@ -214,8 +204,8 @@ function code_6_9_10_11_12_12a() {
 
     private escape(val: unknown) {
       return val instanceof Html
-        ? val.toHtml()      // Html 인스턴스라면 재귀적으로 toHtml() 호출
-        : escapeHtml(val);  // 일반 값이라면 escapeHtml 처리
+        ? val.toHtml()
+        : escapeHtml(val);
     }
 
     toHtml() {
@@ -247,7 +237,7 @@ function code_6_9_10_11_12_12a() {
       <li>${a}</li>
       <li>${b}</li>
       ${menuHtml(menu)}
-      ${html`<li>${html`<b>3단계 중첩</b>`}</li>`}
+      ${html`<li>${html`<b>3-step nesting</b>`}</li>`}
     </ul>
   `;
 
@@ -256,19 +246,19 @@ function code_6_9_10_11_12_12a() {
   //   <li>&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;</li>
   //   <li>Hello &amp; Welcome!</li>
   //   <li>Choco Latte &amp; Cookie (8000)</li>
-  //   <li><b>3단계 중첩</b></li>
+  //   <li><b>3-step nesting</b></li>
   // </ul>
 
   // [6-12]
   const menus: Menu[] = [
-    { name: '아메리카노', price: 4500 },
-    { name: '카푸치노', price: 5000 },
-    { name: '라떼 & 쿠기 세트', price: 8000 },
+    { name: 'Americano', price: 4500 },
+    { name: 'Cappuccino', price: 5000 },
+    { name: 'Latte & cookie set', price: 8000 },
   ];
 
   const menuBoardHtml = (menus: Menu[]) => html`
     <div>
-      <h1>메뉴 목록</h1>
+      <h1>Menu list</h1>
       <ul>
         ${menus.map(menuHtml).reduce((acc, a) => acc + a.toHtml(), '')}
       </ul>
@@ -277,18 +267,18 @@ function code_6_9_10_11_12_12a() {
 
   console.log(menuBoardHtml(menus).toHtml());
   // <div>
-  //   <h1>메뉴 목록</h1>
+  //   <h1>Menu list</h1>
   //   <ul>
-  //     &lt;li&gt;아메리카노 (4500)&lt;/li&gt;
-  //     &lt;li&gt;카푸치노 (5000)&lt;/li&gt;
-  //     &lt;li&gt;라떼 &amp; 쿠기 세트 (8000)&lt;/li&gt;
+  //     &lt;li&gt;Americano (4500)&lt;/li&gt;
+  //     &lt;li&gt;Cappuccino (5000)&lt;/li&gt;
+  //     &lt;li&gt;Latte &amp; cookie set (8000)&lt;/li&gt;
   //   </ul>
   // </div>
 
   // [6-12a]
   const menuBoardHtml2 = (menus: Menu[]) => html`
     <div>
-      <h1>메뉴 목록</h1>
+      <h1>Menu list</h1>
       <ul>
         ${menus.map(menuHtml).reduce((a, b) => html`${a}${b}`)}
       </ul>
@@ -297,11 +287,11 @@ function code_6_9_10_11_12_12a() {
 
   console.log(menuBoardHtml2(menus).toHtml());
   // <div>
-  //   <h1>메뉴 목록</h1>
+  //   <h1>Menu list</h1>
   //   <ul>
-  //     <li>아메리카노 (4500)</li>
-  //     <li>카푸치노 (5000)</li>
-  //     <li>라떼 &amp; 쿠기 세트 (8000)</li>
+  //     <li>Americano (4500)</li>
+  //     <li>Cappuccino (5000)</li>
+  //     <li>Latte &amp; cookie set (8000)</li>
   //   </ul>
   // </div>
 }
@@ -366,16 +356,16 @@ function code_6_13_14() {
   };
 
   const menus: Menu[] = [
-    { name: '아메리카노', price: 4500 },
-    { name: '카푸치노', price: 5000 },
-    { name: '라떼 & 쿠기 세트', price: 8000 },
+    { name: 'Americano', price: 4500 },
+    { name: 'Cappuccino', price: 5000 },
+    { name: 'Latte & cookie set', price: 8000 },
   ];
 
   const menuHtml = ({ name, price }: Menu) => html`<li>${name} (${price})</li>`;
 
   const menuBoardHtml = (menus: Menu[]) => html`
     <div>
-      <h1>메뉴 목록</h1>
+      <h1>Menu list</h1>
       <ul>
         ${menus.map(menuHtml)}
       </ul>
@@ -383,13 +373,12 @@ function code_6_13_14() {
   `;
 
   console.log(menuBoardHtml(menus).toHtml());
-  // 결과:
   // <div>
-  //   <h1>메뉴 목록</h1>
+  //   <h1>Menu list</h1>
   //   <ul>
-  //     <li>아메리카노 (4500)</li>
-  //     <li>카푸치노 (5000)</li>
-  //     <li>라떼 &amp; 쿠기 세트 (8000)</li>
+  //     <li>Americano (4500)</li>
+  //     <li>Cappuccino (5000)</li>
+  //     <li>Latte &amp; cookie set (8000)</li>
   //   </ul>
   // </div>
 
@@ -453,7 +442,7 @@ function code_6_15_16() {
 
     private remove() {
       this.element().remove();
-      alert(`${this.data.name}님을 삭제하였습니다.`);
+      alert(`Removed ${this.data.name}`);
     }
   }
 

@@ -21,31 +21,24 @@ async function code_6_20_21() {
 
     for (let i = 0; i < fs.length; i++) {
       const taskFactory = fs[i];
-      // 각 작업을 실행하고 결과를 해당 인덱스에 저장한 뒤, 완료 시 activePromises에서 제거
       const p = taskFactory()
         .then((fetchedValue) => {
-          // 작업 완료 시 결과 배열에 할당
           results[i] = fetchedValue;
         })
         .then(() => {
-          // 해당 작업이 완료되었으므로 activePromises에서 제거
           const removeIndex = activePromises.indexOf(p);
           if (removeIndex > -1) {
             activePromises.splice(removeIndex, 1);
           }
         });
 
-      // 실행 중인 작업 리스트에 현재 작업 추가
       activePromises.push(p);
 
-      // 현재 실행 중인 작업 수가 제한에 도달하면, 하나가 끝날 때까지 대기
       if (activePromises.length >= poolSize) {
-        // 가장 먼저 완료되는 작업을 기다려, 실행 중인 작업 수를 조정
         await Promise.race(activePromises);
       }
     }
 
-    // 남은 모든 작업이 완료될 때까지 대기 후 결과 반환
     await Promise.all(activePromises);
 
     return results;
@@ -93,16 +86,13 @@ async function code_6_22() {
 
     let pool: TaskRunner<T>[] = [];
     for (const nextTask of tasks) {
-      // pool에 작업을 poolSize 만큼 추가
       pool.push(nextTask);
       if (pool.length < poolSize) continue;
-      // 현재 풀에 있는 작업을 시작하고 하나가 끝날 때까지 대기
       await Promise.race(pool.map(task => task.run()));
-      // 완료된 작업 제거
       pool.splice(pool.findIndex(task => task.isDone), 1);
     }
 
-    return Promise.all(tasks.map(task => task.promise)); // 이미 완료되었을 결과를 수집
+    return Promise.all(tasks.map(task => task.promise));
   }
 
   const tasks = [
@@ -174,9 +164,9 @@ async function code_6_25_26() {
     private readonly pool: TaskRunner<T>[] = [];
     public poolSize: number;
 
-    // (1) (() => Promise<T>)[]에서 Iterable<() => Promise<T>> 로 변경
+    // (1)
     constructor(fs: Iterable<() => Promise<T>>, poolSize: number) {
-      this.taskIterator = map(f => new TaskRunner(f), fs); // (2) 이터러블 map으로 변경
+      this.taskIterator = map(f => new TaskRunner(f), fs); // (2)
       this.poolSize = poolSize;
     }
 
@@ -192,7 +182,7 @@ async function code_6_25_26() {
       const { pool, taskIterator } = this;
       const tasks: TaskRunner<T>[] = [];
 
-      while (true) { // (3) 반복 방식 변경
+      while (true) { // (3)
         const { done, value: nextTask } = taskIterator.next();
         if (!done) {
           pool.push(nextTask);
@@ -221,9 +211,9 @@ async function code_6_25_26() {
   console.log("Results:", results);
 
   async function crawling(page: number) {
-    console.log(`${page}페이지 분석 시작`)
+    console.log(`Starting analysis of page ${page}`)
     await delay(5_000);
-    console.log(`${page}페이지 저장 완료`);
+    console.log(`Page ${page} saved successfully`);
     return page;
   }
 
@@ -234,9 +224,9 @@ async function code_6_25_26() {
 }
 
 async function crawling(page: number) {
-  console.log(`${page}페이지 분석 시작`)
+  console.log(`Starting analysis of page ${page}`)
   await delay(5_000);
-  console.log(`${page}페이지 저장 완료`);
+  console.log(`Page ${page} saved successfully`);
   return page;
 }
 
@@ -298,9 +288,8 @@ async function code_6_27_28() {
   async function runAllTest() {
     try {
       const result = await new TaskPool(tasks, 2).runAll();
-      console.log(result); // 여기 오지 않음
+      console.log(result);
     } catch (e) {
-      // 하나라도 실패하면 여기로
       console.log(e); // "no!"
     }
   }
@@ -330,9 +319,7 @@ async function code_6_27_28() {
 
       await new TaskPool(map(task, range(Infinity)), 5).runAll();
     } catch (e) {
-      // 하나라도 실패하면 무한 작업을 중단하고 여기로
-      console.log(`crawling 중간에 실패! (${e}페이지)`);
-      // crawling 중간에 실패! (7페이지)
+      console.log(`Crawling failed halfway! (Page ${e})`);
     }
   }
 
@@ -351,10 +338,8 @@ async function code_6_27_28() {
       map(task, range(Infinity)), 5
     );
 
-    // 중간에 실패해도 무한 작업 계속 진행
     void taskPool.runAllSettled();
 
-    // 10초 후 poolSize를 5에서 10으로 변경
     setTimeout(() => {
       taskPool.setPoolSize(10);
     }, 10_000);

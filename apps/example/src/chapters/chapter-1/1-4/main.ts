@@ -136,7 +136,7 @@ function code_1_42() {
         const { done, value } = iterator.next();
         if (done) return { done, value }; // (3)
         if (f(value)) return { done, value }; // (1)
-        return this.next(); // (2) 재귀 호출
+        return this.next(); // (2)
       },
       [Symbol.iterator]() {
         return this;
@@ -156,7 +156,7 @@ function code_1_42a() {
           const { done, value } = iterator.next();
           if (done) return { done, value };
           if (f(value)) return { done, value };
-        } while (true); // 재귀 호출과 동일한 위치이고 거의 동일한 표현
+        } while (true);
       },
       [Symbol.iterator]() {
         return this;

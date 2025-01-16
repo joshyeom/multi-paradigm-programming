@@ -25,7 +25,7 @@ function code_1_10a() {
 
   console.log(iter.next());
   // { value: 1, done: false }
-  console.log(iter.next()); // hi <-- 이때 'hi'가 콘솔에 출력됨
+  console.log(iter.next()); // hi
   // { value: 2, done: false }
   console.log(iter.next());
   // { value: 3, done: false }

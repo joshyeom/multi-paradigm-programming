@@ -4,16 +4,16 @@ function delay<T>(time: number, value: T): Promise<T> {
 
 async function code_4_3() {
   function test() {
-    console.time('test'); // 코드 실행 시간을 측정 시작
+    console.time('test');
 
     delay(1000, "Hello, world!").then((result) => { // [result: string]
-      console.log(result); // 1초 후에 "Hello, world!" 출력
+      console.log(result);
     }).then(() => {
       return delay(2000, 40);
     }).then((result) => { // [result: number]
-      console.log(result); // 2초 후에 40 출력
+      console.log(result);
 
-      console.timeEnd('test'); // 코드 실행 시간을 측정 종료 및 출력: 약 3000ms
+      console.timeEnd('test');
     });
   }
 
@@ -28,15 +28,15 @@ async function code_4_3() {
 
 async function code_4_4() {
   async function test2() {
-    console.time('test2'); // 코드 실행 시간을 측정 시작
+    console.time('test2');
 
     const result1 = await delay(1000, "Hello, world!"); // [result1: string]
-    console.log(result1); // 1초 후에 "Hello, world!" 출력
+    console.log(result1);
 
     const result2 = await delay(2000, 40); // [result2: number]
-    console.log(result2); // 2초 후에 40 출력
+    console.log(result2);
 
-    console.timeEnd('test2'); // 코드 실행 시간을 측정 종료 및 출력: 약 3000ms
+    console.timeEnd('test2');
   }
 
   await test2();
@@ -51,12 +51,11 @@ async function code_4_5() {
   const promise2 = new Promise((resolve) => setTimeout(resolve, 100, 'two'));
 
   await Promise.race([promise1, promise2]).then((value) => {
-    console.log(value); // "two"가 출력됩니다. (먼저 완료된 Promise)
+    console.log(value); // two
   });
 }
 
 function getRandomValue<T>(a: T, b: T): T {
-  // 0 또는 1 중 하나를 무작위로 뽑은 뒤, 그 값에 따라 a 또는 b를 반환합니다.
   const randomIndex = Math.floor(Math.random() * 2);
   return randomIndex === 0 ? a : b;
 }
@@ -66,9 +65,8 @@ type User = {
 };
 
 function getFriends(): Promise<User[]> {
-  // return fetch('/friends').then(res => res.json()); 와 유사한 역할을 하는 함수의 임시 구현
   return delay(
-    getRandomValue(60, 6_000), // 0.06초 or 6초
+    getRandomValue(60, 6_000),
     [{ name: 'Marty' }, { name: 'Michael' }, { name: 'Sarah' }]
   );
 }
@@ -76,14 +74,14 @@ function getFriends(): Promise<User[]> {
 async function code_4_6() {
   const result = await Promise.race([
     getFriends(),
-    delay(5000, 'timeout') // 5초
+    delay(5000, 'timeout')
   ]);
 
   if (result === 'timeout') {
-    console.log("현재 네트워크 환경이 좋지 않습니다.");
+    console.log("The current network environment is not stable.");
   } else {
     const friends = result as User[];
-    console.log("친구 목록 렌더링: ", friends.map(({ name }) => `<li>${name}</li>`));
+    console.log("Friend list rendering:", friends.map(({ name }) => `<li>${name}</li>`));
   }
 }
 
@@ -111,20 +109,20 @@ async function code_4_7() {
     }
 
     const friends = await friendsPromise;
-    console.log("친구 목록 렌더링: ", friends.map(({ name }) => `<li>${name}</li>`));
+    console.log("Friend list rendering:", friends.map(({ name }) => `<li>${name}</li>`));
   }
 
   await renderFriendsPicker();
-  // 빠른 응답 시 (랜덤)
-  // 0.06초 뒤
-  // 친구 목록 렌더링: <li>Marty</li><li>Michael</li><li>Sarah</li>
+  // If the response is fast (random)
+  // After 0.06 seconds
+  // Friend list rendering: <li>Marty</li><li>Michael</li><li>Sarah</li>
 
   await renderFriendsPicker();
-  // 느린 응답 시 (랜덤)
+  // If the response is slow (random)
   // append loading...
-  // 6초 뒤
+  // After 6 seconds
   // remove loading...
-  // 친구 목록 렌더링: <li>Marty</li><li>Michael</li><li>Sarah</li>
+  // Friend list rendering: <li>Marty</li><li>Michael</li><li>Sarah</li>
 }
 
 type File = {
@@ -145,7 +143,7 @@ async function code_4_8() {
   ]);
 
   console.log(files);
-  // 약 1,500ms 뒤:
+  // After about 1,500ms:
   // [
   //   { name: 'img.png', body: '...', size: 500 },
   //   { name: 'book.pdf', body: '...', size: 1000 },
@@ -159,12 +157,12 @@ async function code_4_9() {
       getFile('img.png'), // 기본 size: 1000, delay: 1000ms
       getFile('book.pdf'),
       getFile('index.html'),
-      delay(500, Promise.reject('파일 다운로드 실패'))
+      delay(500, Promise.reject('File download failed'))
     ]);
-    console.log(files); // 이 라인은 실행되지 않습니다.
+    console.log(files);
   } catch (error) {
-    // 약 500ms 뒤
-    console.error(error); // '파일 다운로드 실패'
+    // After about 500ms:
+    console.error(error); // 'File download failed'
   }
 }
 
@@ -173,16 +171,16 @@ async function code_4_10() {
     getFile('img.png'),
     getFile('book.pdf'),
     getFile('index.html'),
-    Promise.reject('파일 다운로드 실패') // 즉시 실패
+    Promise.reject('File download failed')
   ]);
 
   console.log(files);
-  // 약 1,000ms 뒤:
+  // After about 1,000ms:
   // [
   //   { status: 'fulfilled', value: { name: 'img.png', body: '...', size: 1000 } },
   //   { status: 'fulfilled', value: { name: 'book.pdf', body: '...', size: 1000 } },
   //   { status: 'fulfilled', value: { name: 'index.html', body: '...', size: 1000 } },
-  //   { status: 'rejected', reason: '파일 다운로드 실패' }
+  //   { status: 'rejected', reason: 'File download failed' }
   // ]
 }
 
@@ -196,7 +194,7 @@ async function code_4_11() {
     getFile('img.png'),
     getFile('book.pdf'),
     getFile('index.html'),
-    Promise.reject('파일 다운로드 실패')
+    Promise.reject('File download failed')
   ].map(settlePromise));
 
   console.log(files);
@@ -204,7 +202,7 @@ async function code_4_11() {
   //   { status: 'fulfilled', value: { name: 'img.png', body: '...', size: 1000 } },
   //   { status: 'fulfilled', value: { name: 'book.pdf', body: '...', size: 1000 } },
   //   { status: 'fulfilled', value: { name: 'index.html', body: '...', size: 1000 } },
-  //   { status: 'rejected', reason: '파일 다운로드 실패' }
+  //   { status: 'rejected', reason: 'File download failed' }
   // ]
 }
 
@@ -213,18 +211,18 @@ async function code_4_12() {
     getFile('img.png', 1500),
     getFile('book.pdf', 700),
     getFile('index.html', 900),
-    delay(100, Promise.reject('파일 다운로드 실패'))
+    delay(100, Promise.reject('File download failed'))
   ]);
 
   console.log(files);
-  // 약 700ms 후
+  // After about 700ms
   // { name: 'book.pdf', body: '...', size: 700 }
 
   const files2 = await Promise.any([
-    delay(200, Promise.reject('파일 다운로드 실패')),
-    delay(100, Promise.reject('파일 다운로드 실패'))
+    delay(200, Promise.reject('File download failed')),
+    delay(100, Promise.reject('File download failed'))
   ]);
-  // 약 200ms 후
+  // After about 200ms
   // Uncaught (in promise) AggregateError: All promises were rejected
 }
 

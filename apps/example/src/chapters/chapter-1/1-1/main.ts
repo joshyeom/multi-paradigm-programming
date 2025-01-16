@@ -46,7 +46,7 @@ function code_1_3() {
 
 function code_1_4() {
   const array = ['A', 'B'];
-  array.reverse(); // array의 순서를 반대로 미리 모두 변경해둠
+  array.reverse();
   console.log(array[0], array[1]); // 'B', 'A'
 }
 
@@ -67,7 +67,7 @@ function reverse<T>(arrayLike: ArrayLike<T>): Iterator<T> {
 function code_1_5() {
   const array = ['A', 'B'];
   const reversed = reverse(array);
-  console.log(array); // ['A', 'B'] (원본 배열은 그대로)
+  console.log(array); // ['A', 'B']
 
   console.log(reversed.next().value, reversed.next().value);
   // 'B', 'A'
@@ -75,7 +75,7 @@ function code_1_5() {
 
 function code_1_6() {
   const array = ['A', 'B', 'C', 'D', 'E', 'F'];
-  array.reverse(); // array의 순서를 반대로 미리 모두 변경해둠
+  array.reverse();
   console.log(array); // ['F', 'E', 'D', 'C', 'B', 'A']
   console.log(array[0], array[1]); // 'F', 'E'
 
@@ -87,7 +87,7 @@ function code_1_6() {
 
 function code_1_7() {
   const array = ['A', 'B', 'C', 'D', 'E', 'F'];
-  const reversed = [...array].reverse(); // 복사하여 반전해둠
+  const reversed = [...array].reverse();
   console.log(reversed[0], reversed[1], array[0], array[1]);
   // 'F', 'E', 'A', 'B'
 

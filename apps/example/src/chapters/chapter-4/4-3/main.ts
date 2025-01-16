@@ -8,7 +8,7 @@ async function code_4_21() {
   async function* stringsAsyncTest(): AsyncIterableIterator<string> {
     yield delay(1000, 'a');
 
-    const b = await delay(500, 'b') + 'c'; // AsyncGenerator 는 await를 사용할 수 있습니다.
+    const b = await delay(500, 'b') + 'c';
 
     yield b;
   }
@@ -16,13 +16,13 @@ async function code_4_21() {
   async function test() {
     const asyncIterator: AsyncIterableIterator<string> = stringsAsyncTest();
     const result1 = await asyncIterator.next();
-    console.log(result1.value); // 약 1,000ms 뒤 'a'
+    console.log(result1.value);
 
     const result2 = await asyncIterator.next();
-    console.log(result2.value); // 다시 500ms 뒤 'bc'
+    console.log(result2.value);
 
     const { done } = await asyncIterator.next();
-    console.log(done); // true
+    console.log(done);
   }
 
   await test();
@@ -48,12 +48,10 @@ async function code_4_22() {
     const asyncIterable = toAsync([1]);
     const asyncIterator = asyncIterable[Symbol.asyncIterator]();
     await asyncIterator.next().then(({ value }) => console.log(value));
-    // 1
 
     const asyncIterable2 = toAsync([Promise.resolve(2)]);
     const asyncIterator2 = asyncIterable2[Symbol.asyncIterator]();
     await asyncIterator2.next().then(({ value }) => console.log(value));
-    // 2
   }
 
   await test();
@@ -72,12 +70,10 @@ async function code_4_23() {
     const asyncIterable = toAsync([1]);
     const asyncIterator = asyncIterable[Symbol.asyncIterator]();
     await asyncIterator.next().then(({ value }) => console.log(value));
-    // 1
 
     const asyncIterable2 = toAsync([Promise.resolve(2)]);
     const asyncIterator2 = asyncIterable2[Symbol.asyncIterator]();
     await asyncIterator2.next().then(({ value }) => console.log(value));
-    // 2
   }
 
   await test();
@@ -89,29 +85,21 @@ async function code_4_24() {
     for await (const a of toAsync([1, 2])) {
       console.log(a);
     }
-    // 1
-    // 2
 
     // (2)
     for await (const a of toAsync([Promise.resolve(1), Promise.resolve(2)])) {
       console.log(a);
     }
-    // 1
-    // 2
 
-    // (3) for await...of 는 Iterable<A>도 순회할 수 있습니다.
+    // (3)
     for await (const a of [1, 2]) {
       console.log(a);
     }
-    // 1
-    // 2
 
-    // (4) for await...of 는 사실 Iterable<Promise<A>>도 순회할 수 있습니다.
+    // (4)
     for await (const a of [Promise.resolve(1), Promise.resolve(2)]) {
       console.log(a);
     }
-    // 1
-    // 2
   }
 
   await test();
@@ -164,8 +152,6 @@ async function code_4_25() {
   for await (const a of mapped) {
     console.log(a); // [const a: string]
   }
-  // 500ms 뒤: A
-  // 다시 200ms 뒤: B
 }
 
 function* mapSync<A, B>(
@@ -196,20 +182,14 @@ async function code_4_27() {
   for await (const a of mapAsync(a => a * 2, numbers())) {
     console.log(a);
   }
-  // 2
-  // 4
 
   for await (const a of mapAsync(a => a * 2, toAsync([1, 2]))) {
     console.log(a);
   }
-  // 2
-  // 4
 
   for await (const a of mapAsync(a => delay(100, a * 2), toAsync([1, 2]))) {
     console.log(a);
   }
-  // 100ms 뒤: 2
-  // 다시 100ms 뒤: 4
 }
 
 // [4-28]
@@ -239,14 +219,10 @@ async function code_4_28() {
   for await (const a of filterAsync(a => a % 2 === 1, toAsync([1, 2, 3]))) {
     console.log(a);
   }
-  // 1
-  // 3
 
   for await (const a of filterAsync(a => delay(100, a % 2 === 1), toAsync([1, 2, 3]))) {
     console.log(a);
   }
-  // 100ms 뒤: 1
-  // 다시 200ms 뒤: 3
 }
 
 function isIterable<T = unknown>(a: Iterable<T> | unknown): a is Iterable<T> {
@@ -305,28 +281,24 @@ async function code_4_30() {
 
 async function code_4_31() {
   async function test() {
-    // (1) 동기적 배열 처리, mapSync로 동작
+    // (1)
     console.log([...map(a => a * 10, [1, 2])]);
     // [10, 20]
 
-    // (2) 비동기 이터러블 처리, mapAsync로 동작
+    // (2)
     for await (const a of map(a => delay(100, a * 10), toAsync([1, 2]))) {
       console.log(a);
     }
-    // 100ms 뒤: 10
-    // 다시 100ms 뒤: 20
 
-    // (3) 비동기 이터러블을 배열로 변환, mapAsync + fromAsync
+    // (3)
     console.log(
       await fromAsync(map(a => delay(100, a * 10), toAsync([1, 2])))
     );
-    // 200ms 뒤: [10, 20]
 
-    // (4) 동기 배열을 비동기적으로 처리, mapSync + Promise.all
+    // (4)
     console.log(
       await Promise.all(map(a => delay(100, a * 10), [1, 2]))
     );
-    // 100ms 뒤: [10, 20]
   }
 
   await test();
@@ -351,26 +323,26 @@ function filter<A>(
 }
 
 async function code_4_33() {
-  // (1) 동기적 필터링, filterSync로 매칭
+  // (1)
   const iter1: IterableIterator<number> = filter(
     (a: number) => a % 2 === 1,
     [1, 2]
   );
 
-  // (2) 함수 매칭 실패
+  // (2)
   // Error TS2769: No overload matches this call.
   // const iter2 = filter(
   //   (a: number) => Promise.resolve(a % 2 === 1), // Error
-  //   [1, 2] // Iterable을 받은 경우는 위 함수가 boolean을 리턴하는 함수여야함
+  //   [1, 2]
   // );
 
-  // (3) 비동기 이터러블 필터링, filterAsync로 매칭
+  // (3)
   const iter3: AsyncIterableIterator<number> = filter(
     (a: number) => a % 2 === 1,
     toAsync([1, 2])
   );
 
-  // (4) 비동기 이터러블을 비동기 보조 함수로 필터링, filterAsync로 매칭
+  // (4)
   const iter4: AsyncIterableIterator<number> = filter(
     (a: number) => Promise.resolve(a % 2 === 1),
     toAsync([1, 2])
@@ -381,7 +353,7 @@ const isOdd = (a: number) => a % 2 === 1;
 
 async function code_4_34() {
   async function test() {
-    // (1) filterSync -> mapSync로 동작
+    // (1)
     console.log([...
       map(a => a * 10,
         filter(isOdd,
@@ -389,7 +361,7 @@ async function code_4_34() {
     ]);
     // [10, 30]
 
-    // (2) toAsync -> filterAsync -> mapAsync로 동작
+    // (2)
     const iter2: AsyncIterableIterator<string> =
       map(a => a.toFixed(2),
         filter(a => delay(100, isOdd(a)),
@@ -399,11 +371,8 @@ async function code_4_34() {
       console.log(a);
     }
     console.log('end');
-    // 100ms 뒤: 1.00
-    // 다시 200ms 뒤: 3.00
-    // 다시 100ms 뒤: end
 
-    // (3) filter -> toAsync -> mapAsync로 동작
+    // (3)
     console.log(
       await fromAsync(
         map(a => delay(100, a * 10),
@@ -411,7 +380,6 @@ async function code_4_34() {
             filter(isOdd,
               naturals(4)))))
     );
-    // 200ms 뒤: [10, 30]
   }
 
   await test();
@@ -482,16 +450,15 @@ class FxAsyncIterable<A> implements AsyncIterable<A> {
 
 async function code_4_37() {
   async function test() {
-    // (1) filterSync -> mapSync로 동작
+    // (1)
     console.log(
       fx(naturals(4))
         .filter(isOdd)
         .map(a => a * 10)
         .toArray()
     );
-    // [10, 30]
 
-    // (2) toAsync -> filterAsync -> mapAsync로 동작
+    // (2)
     const iter2 = fx(naturals(4))
       .toAsync()
       .filter(a => delay(100, isOdd(a)))
@@ -501,11 +468,8 @@ async function code_4_37() {
       console.log(a);
     }
     console.log('end');
-    // 100ms 뒤: 1.00
-    // 다시 200ms 뒤: 3.00
-    // 다시 100ms 뒤: end
 
-    // (3) filter -> toAsync -> mapAsync로 동작
+    // (3)
     console.log(
       await fx(naturals(4))
         .filter(isOdd)
@@ -513,7 +477,6 @@ async function code_4_37() {
         .map(a => delay(100, a * 10))
         .toArray()
     );
-    // 200ms 뒤: [10, 30]
   }
 
   await test();
@@ -555,9 +518,8 @@ async function reduceAsync<A, Acc>(
 
 async function code_4_38() {
   // async function test() {
-  //   // toAsync를 사용하지 않고 비동기 필터링과 매핑을 시도
   //   const iter2 = fx(naturals(4))
-  //     .filter(a => delay(100, isOdd(a))) // 타입 에러 발생 (TS2322)
+  //     .filter(a => delay(100, isOdd(a))) // Error (TS2322)
   //     .map(a => a.toFixed());
   //
   //   // TS2322: Type Promise<boolean> is not assignable to type boolean
@@ -584,7 +546,6 @@ async function code_4_40() {
     result,
     await resultPromise
   );
-  // 40 40
 }
 
 export async function main() {

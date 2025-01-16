@@ -58,8 +58,8 @@ class UserPickerView extends View<User[]> {
       <div>
         <div class="header">
           ${this.toggleListController.toggleAllView}
-          <h2>친구 선택하기</h2>
-          <button class="done">확인</button>
+          <h2>Select friends</h2>
+          <button class="done">Confirm</button>
         </div>
         <div class="body">
           ${this.toggleListController.listView}
@@ -99,9 +99,9 @@ class ChatCreationView extends View<Chat> {
   override template() {
     return html`
       <div>
-        <button class="pick">대화상대 선택</button>
+        <button class="pick">Select a friend to chat</button>
         ${this.userListView}
-        <button class="create">채팅 시작하기</button>
+        <button class="create">Please select your friends.</button>
       </div>
     `;
   }
@@ -115,10 +115,10 @@ class ChatCreationView extends View<Chat> {
   @on('click', 'button.create')
   private async create() {
     if (this.isEmpty()) {
-      await AlertView.open('친구들을 선택해주세요.');
+      await AlertView.open('Please select your friends.');
     } else {
       if (await ConfirmView.open(this.startMessage)) {
-        alert('즐거운 채팅 시작!');
+        alert('Enjoy your chat!');
         // new ChatView(this.data)...
       } else {
         this.userListView.set([]);
@@ -132,7 +132,7 @@ class ChatCreationView extends View<Chat> {
 
   get startMessage() {
     const names = this.data.users.map(({name}) => name);
-    return `${names.join(', ')} 친구들과의 채팅을 시작하겠습니까?`;
+    return `Do you want to start a chat with ${names.join(', ')}?`;
   }
 }
 

@@ -25,14 +25,13 @@ function code_5_13() {
 }
 
 function code_5_14() {
-  // 인자를 하나씩 평가하도록 구현된 add 함수
   const add = (a: number) => (b: number) => a + b;
 
   const result = add(10)(5);
   console.log(result);
   // 15
 
-  const add10 = add(10); // 인자가 a만 적용된 상태의 함수
+  const add10 = add(10);
   console.log(add10(5));
   // 15
 
@@ -85,8 +84,8 @@ async function code_5_18_19() {
   const result2 = await pipe(
     arr,
     toAsync,
-    map(a => Promise.resolve(a + 10)), // Promise<number>를 반환해도
-    filter(a => a % 2 === 0), // filter의 a는 Promise가 벗겨진 11, 12, 13 ...
+    map(a => Promise.resolve(a + 10)),
+    filter(a => a % 2 === 0),
     toArray,
     arr => arr.reverse(),
   );
@@ -204,16 +203,14 @@ function code_5_25() {
 }
 
 function code_5_26_27() {
-  // 숫자가 start부터 증가되는 이터레이터를 만드는 재사용 가능한 함수
   const count = (start = 1) => range(start, Infinity);
 
-  // 초기 값과 함수를 받아 무한히 반복하여 적용하는 재사용 가능한 함수
   function* repeatApply<A>(f: (acc: A) => A, acc: A) {
     while (true) yield (acc = f(acc));
   }
 
   const nextCollatzValue = (num: number) =>
-    num % 2 === 0 // 짝수이면
+    num % 2 === 0
       ? num / 2
       : num * 3 + 1;
 
@@ -248,7 +245,6 @@ function code_5_28() {
     })
     .forEach(a => console.log('forEach:', a));
 
-  // 출력
   // takeWhile: 1 true
   // forEach: 1
   // takeWhile: 2 true
@@ -264,7 +260,6 @@ function code_5_28() {
     })
     .forEach(a => console.log('forEach:', a));
 
-  // 출력
   // takeUntil: 0 false
   // forEach: 0
   // takeUntil: 10 false

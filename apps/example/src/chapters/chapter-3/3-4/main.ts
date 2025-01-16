@@ -28,7 +28,7 @@ function* filter<A>(f: (a: A) => boolean, iterable: Iterable<A>): IterableIterat
 function code_3_42_43() {
   function find<A>(f: (a: A) => boolean, iterable: Iterable<A>): A | undefined {
     return filter(f, iterable).next().value;
-    // 아래와 같이 구현할 수도 있습니다.
+    // or
     // const [head] = filter(f, iterable);
     // return head;
   }
@@ -49,7 +49,7 @@ function code_3_44() {
   const head = <A>(
     iterable: Iterable<A>
   ): A | undefined => iterable[Symbol.iterator]().next().value;
-  // 아래와 같이 구현할 수도 있습니다.
+  // or
   // const head = <A>([a]: Iterable<A>): A | undefined => a;
 
   const find = <A>(
@@ -92,12 +92,12 @@ function code_3_46_47() {
     { name: 'Coffee', price: 3000 }
   ];
 
-  // (1) 옵셔널 체이닝 연산자(?.)를 통해 name 프로퍼티에 안전하게 접근
+  // (1)
   const dessert = find(({ price }) => price < 2000, desserts);
   console.log(dessert?.name ?? 'T^T');
   // T^T
 
-  // (2) Non-null 단언 연산자(!)를 통해 항상 무조건 찾을 상황을 의도하고 있다고 언어와 소통
+  // (2)
   const dessert2 = find(({ price }) => price < Infinity , desserts)!;
   console.log(dessert2.name);
   // Chocolate
@@ -205,7 +205,6 @@ function code_3_57() {
 function code_3_58() {
   const arr = [1, 2, 3, 4, 5];
 
-  // 배열 concat을 사용한 예제
   const arr2 = arr.concat([6, 7, 8, 9, 10]);
   console.log(arr2); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   let acc = 0;
@@ -214,9 +213,8 @@ function code_3_58() {
   }
   console.log(acc); // 28
 
-  // 제너레이터 concat을 사용한 예제
   const iter = concat(arr, [6, 7, 8, 9, 10]);
-  console.log(iter); // concat {<suspended>} (아무 일도 일어나지 않음)
+  console.log(iter); // concat {<suspended>}
   let acc2 = 0;
   for (const a of take(7, iter)) {
     acc2 += a;
@@ -227,7 +225,6 @@ function code_3_58() {
 function code_3_59() {
   const arr = [1, 2, 3, 4, 5];
 
-  // push를 사용하여 요소를 추가하고 합계를 구하는 예제
   arr.push(6, 7);
   let acc1 = 0;
   for (const a of arr) {
@@ -236,11 +233,9 @@ function code_3_59() {
   console.log(acc1); // 28
   console.log(arr); // [1, 2, 3, 4, 5, 6, 7]
 
-  // push로 추가한 요소를 다시 제거 (원본 배열 복원)
   arr.pop();
   arr.pop();
 
-  // push를 사용하여 요소를 추가한 후 다시 합계를 구하는 예제
   arr.push(8, 9);
   let acc2 = 0;
   for (const a of arr) {
@@ -249,7 +244,6 @@ function code_3_59() {
   console.log(acc2); // 32
   console.log(arr); // [1, 2, 3, 4, 5, 8, 9]
 
-  // push로 추가한 요소를 다시 제거 (원본 배열 복원)
   arr.pop();
   arr.pop();
 }
@@ -257,7 +251,6 @@ function code_3_59() {
 function code_3_59a() {
   const arr = [1, 2, 3, 4, 5];
 
-  // 제너레이터 concat으로 순회를 이어서 할 이터레이터를 만들고 합계를 구하는 예제
   const iter1 = concat(arr, [6, 7]);
   let acc3 = 0;
   for (const a of iter1) {
@@ -266,7 +259,6 @@ function code_3_59a() {
   console.log(acc3); // 28
   console.log(arr); // [1, 2, 3, 4, 5];
 
-  // 제너레이터 concat으로 다른 요소를 더해 다시 합계를 구하는 예제
   const iter2 = concat(arr, [8, 9]);
   let acc4 = 0;
   for (const a of iter2) {

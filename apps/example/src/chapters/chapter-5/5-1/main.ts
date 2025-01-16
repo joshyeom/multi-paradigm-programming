@@ -7,12 +7,12 @@ const numbers = [
 
 function code_5_1() {
   const oddSquareSum = numbers
-    .flat() // 2차원 배열을 1차원 배열로 펼침
-    .filter(a => a % 2 === 1) // 홀수만 필터링
-    .map(a => a * a) // 제곱
-    .reduce((a, b) => a + b, 0); // 합산
+    .flat()
+    .filter(a => a % 2 === 1)
+    .map(a => a * a)
+    .reduce((a, b) => a + b, 0);
 
-  console.log(oddSquareSum); // 165
+  console.log(oddSquareSum);
 }
 
 type Player = {
@@ -62,35 +62,35 @@ const teams: Team[] = [
 
 function code_5_2_3() {
   const totalHighScorers = teams
-    .map(team => team.players) // 팀 객체 구조를 선수들의 2차원 배열로 변환
-    .flat() // 1차원 배열로 펼침
-    .filter(player => player.score >= 30) // 30점 이상 득점한 선수만 필터링
-    .map(player => player.score) // 점수로 변환
-    .reduce((a, b) => a + b, 0); // 합산
+    .map(team => team.players)
+    .flat()
+    .filter(player => player.score >= 30)
+    .map(player => player.score)
+    .reduce((a, b) => a + b, 0);
 
   console.log(totalHighScorers); // 175
 
   const totalHighScorers2 = teams
-    .flatMap(team => team.players) // 모든 팀의 선수 배열을 펼침
-    .filter(player => player.score >= 30) // 30점 이상 득점한 선수만 필터링
-    .map(player => player.score) // 점수로 변환
-    .reduce((a, b) => a + b, 0); // 합산
+    .flatMap(team => team.players)
+    .filter(player => player.score >= 30)
+    .map(player => player.score)
+    .reduce((a, b) => a + b, 0);
 
   console.log(totalHighScorers2); // 175
 }
 
 function code_5_4() {
   const oddSquareSum = numbers
-    .flat() // 2차원 배열을 1차원 배열로 펼침
-    .filter(a => a % 2 === 1) // 홀수만 필터링
-    .map(a => a * a) // 제곱
-    .reduce((a, b) => a + b, 0); // 합산
+    .flat()
+    .filter(a => a % 2 === 1)
+    .map(a => a * a)
+    .reduce((a, b) => a + b, 0);
 
   const totalHighScorers = teams
-    .flatMap(team => team.players) // 모든 팀의 선수 배열을 펼침
-    .filter(player => player.score >= 30) // 30점 이상 득점한 선수만 필터링
-    .map(player => player.score) // 점수로 변환
-    .reduce((a, b) => a + b, 0); // 합산
+    .flatMap(team => team.players)
+    .filter(player => player.score >= 30)
+    .map(player => player.score)
+    .reduce((a, b) => a + b, 0);
 }
 
 function code_5_5() {
@@ -103,19 +103,19 @@ function code_5_5() {
 
   const products: Product[] = [
     {
-      name: '티셔츠',
+      name: 'T-shirt',
       price: 10000,
       quantity: 1,
       selected: true,
     },
     {
-      name: '셔츠',
+      name: 'Shirt',
       price: 30000,
       quantity: 2,
       selected: false,
     },
     {
-      name: '바지',
+      name: 'Pants',
       price: 15000,
       quantity: 2,
       selected: true,
@@ -124,7 +124,7 @@ function code_5_5() {
 
   const sumSelectedQuantities = (products: Product[]) =>
     products.reduce((total, prd) => {
-      if (prd.selected) { // 선택된 상품의 수량 합산하기
+      if (prd.selected) {
         return total + prd.quantity;
       } else {
         return total;
@@ -133,15 +133,15 @@ function code_5_5() {
 
   const calcSelectedPrices = (products: Product[]) =>
     products.reduce((total, prd) => {
-      if (prd.selected) { // 선택된 상품의 가격 합산하기
+      if (prd.selected) {
         return total + prd.price * prd.quantity;
       } else {
         return total;
       }
     }, 0);
 
-  console.log(sumSelectedQuantities(products)); // 선택된 상품의 총 수량: 3
-  console.log(calcSelectedPrices(products)); // 선택된 상품의 총 가격: 40,000
+  console.log(sumSelectedQuantities(products));
+  console.log(calcSelectedPrices(products));
 }
 
 function code_5_6() {
@@ -154,19 +154,19 @@ function code_5_6() {
 
   const products: Product[] = [
     {
-      name: '티셔츠',
+      name: 'T-shirt',
       price: 10000,
       quantity: 1,
       selected: true,
     },
     {
-      name: '셔츠',
+      name: 'Shirt',
       price: 30000,
       quantity: 2,
       selected: false,
     },
     {
-      name: '바지',
+      name: 'Pants',
       price: 15000,
       quantity: 2,
       selected: true,
@@ -175,18 +175,18 @@ function code_5_6() {
 
   const sumSelectedQuantities = (products: Product[]) =>
     products
-      .filter(prd => prd.selected) // 선택된 상품만 필터링
-      .map(prd => prd.quantity)    // 수량만 추출
-      .reduce((a, b) => a + b, 0); // 합산
+      .filter(prd => prd.selected)
+      .map(prd => prd.quantity)
+      .reduce((a, b) => a + b, 0);
 
   const calcSelectedPrices = (products: Product[]) =>
     products
-      .filter(prd => prd.selected) // 선택된 상품만 필터링
-      .map(prd => prd.price * prd.quantity) // 총 가격 계산
-      .reduce((a, b) => a + b, 0); // 합산
+      .filter(prd => prd.selected)
+      .map(prd => prd.price * prd.quantity)
+      .reduce((a, b) => a + b, 0);
 
-  console.log(sumSelectedQuantities(products)); // 선택된 상품의 총 수량: 3
-  console.log(calcSelectedPrices(products));   // 선택된 상품의 총 가격: 40,000
+  console.log(sumSelectedQuantities(products)); 
+  console.log(calcSelectedPrices(products));  
 }
 
 // [5-7]
@@ -205,7 +205,7 @@ type Product = {
 
 const products: Product[] = [
   {
-    name: '티셔츠',
+    name: 'T-shirt',
     price: 10000,
     selected: true,
     options: [
@@ -215,7 +215,7 @@ const products: Product[] = [
     ]
   },
   {
-    name: '셔츠',
+    name: 'Shirt',
     price: 30000,
     selected: false,
     options: [
@@ -225,7 +225,7 @@ const products: Product[] = [
     ]
   },
   {
-    name: '바지',
+    name: 'Pants',
     price: 15000,
     selected: true,
     options: [
@@ -238,34 +238,34 @@ const products: Product[] = [
 function code_5_8() {
   const sumSelectedQuantities2 = (products: Product[]) =>
     products
-      .filter(prd => prd.selected) // 선택된 상품만 필터링
-      .map(prd => prd.options) // 각 상품의 옵션 배열로 변환
-      .flat() // 옵션 배열을 펼쳐 1차원 배열로 변환
-      .map(opt => opt.quantity) // 각 옵션의 수량 추출
-      .reduce((a, b) => a + b, 0); // 총합 계산
+      .filter(prd => prd.selected)
+      .map(prd => prd.options)
+      .flat()
+      .map(opt => opt.quantity)
+      .reduce((a, b) => a + b, 0);
 
   const calcSelectedPrices2 = (products: Product[]) =>
     products
-      .filter(prd => prd.selected) // 선택된 상품만 필터링
+      .filter(prd => prd.selected)
       .map(prd => prd.options.map(
-        opt => (prd.price + opt.price) * opt.quantity // 옵션별 최종 가격 계산
+        opt => (prd.price + opt.price) * opt.quantity
       ))
-      .flat() // 모든 옵션의 가격 배열을 펼침
-      .reduce((a, b) => a + b, 0); // 총합 계산
+      .flat()
+      .reduce((a, b) => a + b, 0);
 
-  console.log(sumSelectedQuantities2(products)); // 선택된 상품의 총 수량: 15
-  console.log(calcSelectedPrices2(products)); // 선택된 상품의 총 가격: 214,500
+  console.log(sumSelectedQuantities2(products));
+  console.log(calcSelectedPrices2(products));
 }
 
 function code_5_9() {
   const sumSelectedQuantities2 = (products: Product[]) =>
     products
       .filter(prd => prd.selected)
-      .flatMap(prd => prd.options) // 각 상품의 옵션 배열들을 1차원 배열로 변환
+      .flatMap(prd => prd.options)
       .map(opt => opt.quantity)
       .reduce((a, b) => a + b, 0);
 
-  console.log(sumSelectedQuantities2(products)); // 15
+  console.log(sumSelectedQuantities2(products));
 }
 
 function code_5_10() {
@@ -278,19 +278,19 @@ function code_5_10() {
 
   const products: Product[] = [
     {
-      name: '티셔츠',
+      name: 'T-shirt',
       price: 10000,
       quantity: 1,
       selected: true,
     },
     {
-      name: '셔츠',
+      name: 'Shirt',
       price: 30000,
       quantity: 2,
       selected: false,
     },
     {
-      name: '바지',
+      name: 'Pants',
       price: 15000,
       quantity: 2,
       selected: true,
@@ -330,8 +330,8 @@ function code_5_11() {
     products.filter(prd => prd.selected)
   );
 
-  console.log(calcTotalPrice(products)); // 모든 상품 총 가격: 561,500
-  console.log(calcSelectedPrices2(products)); // 선택된 상품의 총 가격: 214,500
+  console.log(calcTotalPrice(products));
+  console.log(calcSelectedPrices2(products));
 }
 
 function code_5_12() {
@@ -357,12 +357,11 @@ function code_5_12() {
       }
     }
 
-    // calcTotalPrice 재사용
     return calcTotalPrice(selectedProducts);
   }
 
-  console.log(calcTotalPrice(products)); // 모든 상품 총 가격: 561,500
-  console.log(calcSelectedPrices2(products)); // 선택된 상품의 총 가격: 214,500
+  console.log(calcTotalPrice(products));
+  console.log(calcSelectedPrices2(products));
 }
 
 export function main() {

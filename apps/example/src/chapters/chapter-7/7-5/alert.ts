@@ -8,7 +8,7 @@ export class AlertView extends View<{ message: string }> {
     return html`
       <div>
         <div class="message">${this.data.message}</div>
-        <button>확인</button>  
+        <button>Confirm</button>  
       </div>
     `;
   }
@@ -34,8 +34,8 @@ export class ConfirmView extends View<{ message: string }> {
     return html`
       <div>
         <div class="message">${this.data.message}</div>
-        <button class="cancel">취소</button>
-        <button class="confirm">확인</button>  
+        <button class="cancel">Cancel</button>
+        <button class="confirm">Confirm</button>  
       </div>
     `;
   }
@@ -55,21 +55,21 @@ export class ConfirmView extends View<{ message: string }> {
 }
 
 export async function main() {
-  alert('완료되었습니다.');
+  alert('Completed.');
   console.log('alert');
 
-  await AlertView.open('완료되었습니다.');
+  await AlertView.open('Completed.');
   console.log('AlertView');
 
-  if (confirm('삭제하시겠습니까?')) {
-    console.log('삭제');
+  if (confirm('Do you want to delete it?')) {
+    console.log('Delete');
   } else {
-    console.log('취소');
+    console.log('Cancel');
   }
 
-  if (await ConfirmView.open('완료되었습니다.')) {
-    console.log('삭제');
+  if (await ConfirmView.open('Completed.')) {
+    console.log('Delete');
   } else {
-    console.log('취소');
+    console.log('Cancel');
   }
 }

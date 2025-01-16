@@ -1,3 +1,31 @@
+import { html } from 'rune-ts';
+
+export function code_1_45() {
+  return html`
+    <div>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      <script>
+        const nodeList = document.querySelectorAll('li');
+
+        for (const node of nodeList) {
+          console.log(node.textContent);
+          // 1
+          // 2
+          // 3
+          // 4
+          // 5
+        }
+      </script>
+    </div>
+  `
+}
+
 function code_1_46() {
   forEach(console.log,
     filter(x => x % 2 === 1,
@@ -19,7 +47,6 @@ function code_1_47() {
 
   console.log(nodes[0], nodes[1], nodes.length);
   // <li>1</li> <li>3</li> 3
-  // nodes는 Array처럼 보입니다.
 
   // nodes.map(node => node.textContent);
   // Uncaught TypeError: nodes.map is not a function
