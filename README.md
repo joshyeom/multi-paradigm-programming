@@ -2,25 +2,29 @@
 
 Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
 
-# Project Setup
+## 멀티패러다임 프로그래밍과 타입스크립트
 
-## Node.js with Volta
+함수형, 객체 지향, LISP을 결합한 소프트웨어 설계와 구현
+
+## Project Setup
+
+### Node.js with Volta
 
 [Volta Guide]('https://docs.volta.sh/guide/getting-started')
 
-### Unix Installation
+#### Unix Installation
 ```shell
 curl https://get.volta.sh | bash
 volta install node@22
 ```
 
-### Windows Installation
+#### Windows Installation
 ```shell
 winget install Volta.Volta
 volta install node@22
 ```
 
-## pnpm
+### pnpm
 
 [pnpm Guide]('https://docs.volta.sh/guide/getting-started')
 
@@ -29,16 +33,18 @@ npm install -g pnpm@10
 ```
 
 
-# Installing and Running the Examples
+## Installing and Running the Examples
 
 ```
 pnpm install
 pnpm -F example dev
 ```
 
+Open the terminal, run the code above, and then navigate to http://localhost:2118/.
+
 터미널을 열어 위 코드를 실행한 후 http://localhost:2118/ 로 접속하세요.
 
-# License
+## License
 
 All example codes in this repository are licensed under the MIT License.
 However, the original book text and any text partially disclosed in this repository are licensed under CC BY-SA.
