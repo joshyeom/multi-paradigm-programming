@@ -6,7 +6,7 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
 
 ```
 pnpm install
-cd example
+cd apps/example
 pnpm rune dev
 ```
 
