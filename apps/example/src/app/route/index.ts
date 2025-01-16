@@ -24,8 +24,10 @@ import { Chapter7Section1 } from '../../chapters/chapter-7/7-1/Chapter7Section1'
 import { Chapter7Section234 } from '../../chapters/chapter-7/7-2_3_4/Chapter7Section234';
 import { Chapter7Section5 } from '../../chapters/chapter-7/7-5/Chapter7Section5';
 import { Chapter7Section52 } from '../../chapters/chapter-7/7-5/Chapter7Section52';
+import { HomePage } from '../../chapters/HomePage';
 
 export const ClientRouter = createRouter({
+  '/': HomePage,
   '/1-1': Chapter1Section1,
   '/1-2': Chapter1Section2,
   '/1-3': Chapter1Section3,

@@ -36,6 +36,7 @@ const addRenderHandler = (createPage: (data: object) => Page<object>) => {
   });
 };
 
+addRenderHandler(ClientRouter['/']);
 addRenderHandler(ClientRouter['/1-1']);
 addRenderHandler(ClientRouter['/1-2']);
 addRenderHandler(ClientRouter['/1-3']);

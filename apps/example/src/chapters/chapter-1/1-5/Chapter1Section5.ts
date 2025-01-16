@@ -1,4 +1,4 @@
-import { EmptyPage } from '../../../lib/EmptyPage';
+import { ChapterPage } from '../../../lib/ChapterPage';
 import { main } from './main';
 import {Page, html} from "rune-ts";
 

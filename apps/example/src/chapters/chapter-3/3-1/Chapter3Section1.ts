@@ -1,7 +1,7 @@
-import { EmptyPage } from '../../../lib/EmptyPage';
+import { ChapterPage } from '../../../lib/ChapterPage';
 import { main } from './main';
 
-export class Chapter3Section1 extends EmptyPage {
+export class Chapter3Section1 extends ChapterPage {
   override onRender() {
     main();
   }

@@ -10,7 +10,7 @@ cd example
 pnpm rune dev
 ```
 
-터미널을 열어 위 코드를 실행한 후 http://localhost:6001/ 로 접속하세요.
+터미널을 열어 위 코드를 실행한 후 http://localhost:2118/ 로 접속하세요.
 
 # License
 
