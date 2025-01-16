@@ -2,6 +2,33 @@
 
 Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
 
+# Project Setup
+
+## Node.js with Volta
+
+[Volta Guide]('https://docs.volta.sh/guide/getting-started')
+
+### Unix Installation
+```shell
+curl https://get.volta.sh | bash
+volta install node@22
+```
+
+### Windows Installation
+```shell
+winget install Volta.Volta
+volta install node@22
+```
+
+## pnpm
+
+[pnpm Guide]('https://docs.volta.sh/guide/getting-started')
+
+```bash
+npm install -g pnpm@10
+```
+
+
 # Installing and Running the Examples
 
 ```
