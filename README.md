@@ -6,8 +6,7 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
 
 ```
 pnpm install
-cd apps/example
-pnpm rune dev
+pnpm -F example dev
 ```
 
 터미널을 열어 위 코드를 실행한 후 http://localhost:2118/ 로 접속하세요.

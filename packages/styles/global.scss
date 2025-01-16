@@ -1,4 +1,4 @@
-@import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';
-//@import 'reset';
+@use 'reset';
+@use 'object-fe';
 
-@import 'object-fe';
+@import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';

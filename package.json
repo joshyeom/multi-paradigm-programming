@@ -49,11 +49,9 @@
       "prettier --write"
     ]
   },
-  "engines": {
-    "node": "20.11.1"
-  },
   "volta": {
-    "node": "20.11.1"
+    "node": "22.13.0",
+    "pnpm": "9.15.0"
   },
   "pnpm": {
     "override": {
