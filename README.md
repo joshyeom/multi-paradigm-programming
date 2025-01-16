@@ -2,7 +2,7 @@
 
 Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
 
-## 멀티패러다임 프로그래밍과 타입스크립트
+### 멀티패러다임 프로그래밍과 타입스크립트
 
 함수형, 객체 지향, LISP을 결합한 소프트웨어 설계와 구현
 
