@@ -1,5 +1,16 @@
 # Multi-Paradigm Programming with TypeScript
+
 Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
+
+# Installing and Running the Examples
+
+```
+pnpm install
+cd example
+pnpm rune dev
+```
+
+터미널을 열어 위 코드를 실행한 후 http://localhost:6001/ 로 접속하세요.
 
 # License
 
