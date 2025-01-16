@@ -1,4 +1,4 @@
-import { ChapterPage } from '../../../lib/ChapterPage';
+import { ChapterPage } from '../../ChapterPage';
 import { main as todo } from './todo';
 import { main as setting } from './setting';
 

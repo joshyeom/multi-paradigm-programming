@@ -1,4 +1,4 @@
-import { ChapterPage } from '../../../lib/ChapterPage';
+import { ChapterPage } from '../../ChapterPage';
 import { main } from './main';
 
 export class Chapter5Section1 extends ChapterPage {
