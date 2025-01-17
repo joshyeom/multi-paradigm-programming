@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@fxts/core": "^1.1.0",
-    "@rune-ts/server": "^1.0.23",
+    "@rune-ts/server": "^1.0.24",
     "rune-ts": "^0.8.12",
     "ua-parser-js": "^1.0.37"
   },

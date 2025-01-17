@@ -17,7 +17,7 @@
     "qs": "^6.12.1"
   },
   "devDependencies": {
-    "@rune-ts/server": "1.0.14",
+    "@rune-ts/server": "1.0.24",
     "@types/express-serve-static-core": "^4.19.0",
     "@types/node": "^20.11.20",
     "@types/qs": "^6.9.15",
