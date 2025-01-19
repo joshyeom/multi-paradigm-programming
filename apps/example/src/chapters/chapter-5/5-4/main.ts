@@ -15,20 +15,21 @@ import {
 } from '@fxts/core';
 
 function code_5_51() {
-  const queryString = "name=John&age=30&city=Seoul";
+  const queryString = "name=Marty%20Yoo&age=41&city=Seoul";
 
   const queryObject = queryString
     .split("&")
     .map((param) => param.split("="))
+    .map(entry => entry.map(decodeURIComponent))
     .map(([key, val]) => ({ [key]: val }))
     .reduce((a, b) => Object.assign(a, b), {});
 
   console.log(queryObject);
-  // { name: "John", age: "30", city: "Seoul" }
+  // {name: "Marty Yoo", age: "41", city: "Seoul"}
 }
 
 function code_5_52_53_54() {
-  const params = { name: "John", age: "30", city: "Seoul" };
+  const params = { name: "Marty Yoo", age: "41", city: "Seoul" };
 
   const queryString =
     Object.entries(params)
@@ -37,7 +38,7 @@ function code_5_52_53_54() {
       .reduce((a, b) => `${a}&${b}`);
 
   console.log(queryString);
-  // "name=John&age=30&city=Seoul"
+  // "name=Marty%20Yoo&age=41&city=Seoul"
 
   const queryString2 =
     Object.entries(params)
@@ -46,7 +47,7 @@ function code_5_52_53_54() {
       .join('&');
 
   console.log(queryString2);
-  // "name=John&age=30&city=Seoul"
+  // "name=Marty%20Yoo&age=41&city=Seoul"
 
   const queryString3 = pipe(
     Object.entries(params),
@@ -56,7 +57,7 @@ function code_5_52_53_54() {
   );
 
   console.log(queryString3);
-  // "name=John&age=30&city=Seoul"
+  // "name=Indong%20Yoo&age=41&city=Seoul"
 }
 function code_5_55() {
   const tree = [
