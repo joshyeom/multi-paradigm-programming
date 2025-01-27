@@ -18,7 +18,7 @@ function on<E extends new (...args: any[]) => Event>(
   descriptor: TypedPropertyDescriptor<T>
 ) => void;
 
-function on<K extends keyof HTMLElementEventMap>(eventType: K) {
+function on(eventType: any) {
   return function <T extends (e: any) => void>(
     viewPrototype: any,
     propertyKey: string,
