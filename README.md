@@ -4,6 +4,8 @@
 
 Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
 
+## 📖 Table of Contents (Book)
+
 [View Detailed Table of Contents](book/en/README.md) <br>
 [From the Author](book/en/0.1-From-the-Author.md) <br>
 [Endorsements](book/en/0.2-Endorsements.md) <br>
@@ -71,6 +73,8 @@ The materials herein are all © 2025 [Marpple Corporation](https://www.marppleco
 # 멀티패러다임 프로그래밍과 타입스크립트
 
 함수형, 객체 지향, LISP을 결합한 소프트웨어 설계와 구현
+
+## 📖 책의 목차
 
 [상세 목차](book/ko/README.md) <br>
 [지은이의 글](book/ko/0.1-지은이의-글.md) <br>
