@@ -1,5 +1,7 @@
 [English](#multi-paradigm-programming-with-typescript) | [한국어](#멀티패러다임-프로그래밍과-타입스크립트)
 
+---
+
 # Multi-Paradigm Programming with TypeScript
 
 Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
@@ -65,8 +67,6 @@ Open the terminal, run the code above, and then navigate to http://localhost:211
 All example codes in this repository are licensed under the MIT License. However, the original book text and any text partially disclosed in this repository are licensed under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 The materials herein are all © 2025 [Marpple Corporation](https://www.marpplecorp.com/).
-
-<br>
 
 ---
 
