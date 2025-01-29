@@ -48,7 +48,7 @@ Open the terminal, run the code above, and then navigate to http://localhost:211
 ## License
 
 All example codes in this repository are licensed under the MIT License.
-However, the original book text and any text partially disclosed in this repository are licensed under CC BY-SA.
+However, the original book text and any text partially disclosed in this repository are licensed under CC [BY-NC-SA])(https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 이 저장소의 예제 코드는 모두 MIT 라이선스로 배포됩니다.
-다만, 책의 원문과 이 저장소에 공개된 모든 텍스트는 CC BY-SA 라이선스를 적용받습니다.
+다만, 책의 원문과 이 저장소에 공개된 모든 텍스트는 CC [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) 라이선스를 적용받습니다.
