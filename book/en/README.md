@@ -13,10 +13,10 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       3. Creating a Reverse Iterator Function from an `ArrayLike` Object
       4. A Lazy-Evaluating `map` Function
       5. The Crossroads of Multiparadigm: The Iterator Pattern and First-Class Functions
-   2. [Generators: Building Iterators with Imperative Programming](1.2-Generators:-Building-Iterators-with-Imperative-Programming.md)
+   2. [Generators: Building Iterators with Imperative Programming](1.2-Generators%3A-Building-Iterators-with-Imperative-Programming.md)
       1. Basic Generator Syntax
       2. Rewriting `reverse` with Generators 
-   3. [The Iterator Pattern in TypeScript: The Iteration Protocol](1.3-The-Iterator-Pattern-in-TypeScript:-The-Iteration-Protocol.md)
+   3. [The Iterator Pattern in TypeScript: The Iteration Protocol](1.3-The-Iterator-Pattern-in-TypeScript%3A-The-Iteration-Protocol.md)
       1. Iterators and Iterables
       2. Interaction Between the Language and Iterables
       3. Generator-Created Iterators Are Also Iterables
@@ -69,7 +69,7 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       2. Looking in More Detail
       3. Examining It with Direct Iterators
       4. Simplifying Our View
-   4. [Generator:Iterator:LISP – Lazy Evaluation and Safe Composition](3.4-Generator:Iterator:LISP-–-Lazy-Evaluation-and-Safe-Composition.md)
+   4. [Generator:Iterator:LISP – Lazy Evaluation and Safe Composition](3.4-Generator%3AIterator%3ALISP-–-Lazy-Evaluation-and-Safe-Composition.md)
       1. The `find` Function Signature
       2. `find` in Haskell and Safe Composition
       3. Rethinking Lazy Evaluation and List Processing via `find`
@@ -80,8 +80,8 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       8. Abstracting Shared Logic in `every` and `some` Functionally
       9. Adding with `concat`
    5. [Summary](3.5-Summary.md)
-4. [Asynchronous Programming](4.0-Asynchronous-Programming.md)
-   1. [Asynchronous as a Value](4.1-Asynchronous-as-a-Value.md)
+4. Asynchronous Programming
+   1. Asynchronous as a Value
       1. Promise
       2. Have You Used `new Promise()` Directly?
       3. Promise.race
@@ -90,30 +90,30 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       6. Promise.all
       7. Promise.allSettled
       8. Promise.any
-   2. [Asynchronous Handling with Laziness](4.2-Asynchronous-Handling-with-Laziness.md)
+   2. Asynchronous Handling with Laziness
       1. How to Defer a Promise’s Execution?
       2. ChatGPT’s Imperative Implementation of Concurrency – `executeWithLimit`
       3. A Functional Implementation of Concurrency – `executeWithLimit`
       4. A “Step” Toward Effective Async Handling – Laziness
-   3. [Treating Asynchronous as a Type](4.3-Treating-Asynchronous-as-a-Type.md)
+   3. Treating Asynchronous as a Type
       1. AsyncIterator, AsyncIterable, AsyncGenerator Protocols
       2. Higher-Order Functions for AsyncIterable
       3. A Convention for Functions Supporting Both Sync and Async – toAsync
       4. Type System + Asynchronous Functional Functions + Class
-   4. [Asynchronous Error Handling](4.4-Asynchronous-Error-Handling.md)
+   4. Asynchronous Error Handling
       1. Loading images and getting their heights
       2. Improved Asynchronous Logic
       3. Ensuring that errors occur properly is key
       4. Stable Software and Asynchronous Programming
-   5. [Summary](4.5-Summary.md)
-5. [Practical Functional Programming](5.0.-Practical-Functional-Programming.md)
-   1. [Working With Real World Data](5.1-Working-With-Real-World-Data.md)
+   5. Summary
+5. Practical Functional Programming
+   1. Working With Real World Data
       1. Working With Numbers in a 2D Array
       2. Handling Basketball Team Data
       3. Handling Commerce Data
       4. Handling Commerce Data 2
       5. Solving Problems With a Consistent Approach
-   2. [Applying to More Problems](5.2-Applying-to-More-Problems.md)
+   2. Applying to More Problems
       1. pipe
       2. Composing Asynchronous Functions With pipe
       3. zip
@@ -121,7 +121,7 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       5. Collatz Conjecture: Counting Until It Becomes 1
       6. take, takeUntil, takeWhile Instead of break
       7. Logic Created by Combining Functions
-   3. [Backend Asynchronous Programming](5.3-Backend-Asynchronous-Programming.md)
+   3. Backend Asynchronous Programming
       1. The Payment Process Problem in a Commerce Platform
       2. Creating a Payment History Synchronization Scheduler
       3. Optimizing Time Complexity Using Hashing
@@ -130,7 +130,7 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       6. Counting Up Front for Efficiency
       7. Improving Efficiency With Parallelism
       8. List-Processing-Based Async/Concurrent Programming
-   4. [Patternizing List Processing](5.4-Patternizing-List-Processing.md)
+   4. Patternizing List Processing
       1. Transform-Accumulate (map-reduce)
       2. Nested-Transform (nested-map)
       3. Iterator-Effect (Iterator-forEach)
@@ -141,9 +141,9 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       8. Combine-Accumulate (zip-reduce)
       9. Hash-Match (reduce-map)
       10. Conceptual Summary of Each Type of List-Processing Function
-   5. [Summary](5.5-Summary.md) 
-6. [Multi-Paradigm Programming](6.0.-Multi-Paradigm-Programming.md)
-   1. [Building an HTML Template Engine](6.1.-Building-an-HTML-Template-Engine.md)
+   5. Summary 
+6. Multi-Paradigm Programming
+   1. Building an HTML Template Engine
       1. Tagged Templates
       2. Implementing with List Processing
       3. Replacing `push` with `concat`
@@ -156,16 +156,16 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       10. Abstracting into a Higher-Order Function
       11. Building a Small Front-End Development Library
       12. The Opportunities Offered by Multi-Paradigm Languages
-   2. [Handling Concurrency with a Multi-Paradigm Approach](6.2.-Handling-Concurrency-with-a-Multi-Paradigm-Approach.md) 
+   2. Handling Concurrency with a Multi-Paradigm Approach
       1. Revisiting `executeWithLimit`
       2. `runTasksWithPool` Implemented Imperatively by ChatGPT
       3. `runTasksWithPool` Implemented via a Multi-Paradigm Approach
       4. Making the Concurrency (Load) Size Dynamically Adjustable
       5. Handling Infinite, Ongoing Tasks
       6. `runAllSettled`
-   3. [Summary](6.3-Summary.md)
-7. [Object-Oriented Front-End Development and Multi-Paradigm Approaches in Practice](7.0.-Object-Oriented-Front-End-Development-and-Multi-Paradigm-Approaches-in-Practice.md)
-   1. [Building a "Settings" App](7.1-Building-a-Settings-App.md)
+   3. Summary
+7. Object-Oriented Front-End Development and Multi-Paradigm Approaches in Practice
+   1. Building a "Settings" App
       1. SwitchView
       2. SettingItemView
       3. SettingListView
@@ -176,7 +176,7 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       8. A Type-Safe Pattern for Custom Event Communication
       9. A Reusable SwitchView Component
       10. How Paradigms Create Reactive Code
-   2. [Building a Todo App](7.2-Building-a-Todo-App.md)
+   2. Building a Todo App
       1. CheckView
       2. Abstract Class and Inheritance
       3. Headless UI
@@ -189,20 +189,20 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       10. From a GoF Design Pattern Perspective – The Strategy Pattern
       11. Inter-Object Communication with First-Class Functions – A “Callback Injection” Pattern
       12. A Multiparadigm Code Design
-   3. [Building a Todo App, Part 2](7.3-Building-a-Todo-App,-Part-2.md)
+   3. Building a Todo App, Part 2
       1. Simplifying Code with Decorators
       2. TextSubmitView
       3. Adding a Helper Method to ListView
       4. Creating a New Todo
       5. SegmentControlView
       6. Optimizing DOM Updates via a Heuristic Diff
-   4. [Building a Todo App, Part 3](7.4-Building-a-Todo-App,-Part-3.md)
+   4. Building a Todo App, Part 3
       1. Making It Flexible with the State Pattern
       2. Benefits of Applying the State Pattern
       3. Dynamically Changing Code and Software Behavior at Runtime
       4. Further Expanding with State Objects
       5. A Multiparadigm Object-Oriented Design
-   5. [Asynchronous Flows with UI, Promise, and Class](7.5-Asynchronous-Flows-with-UI,-Promise,-and-Class.md)
+   5. Asynchronous Flows with UI, Promise, and Class
       1. Using Promises for Custom Alerts and Confirms
       2. Promises as Return Values, Mediating Communication
       3. Selecting Friends for a Group Chat
