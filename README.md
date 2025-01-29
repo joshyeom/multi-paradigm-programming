@@ -20,12 +20,12 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
 6. Multi-Paradigm Programming
 7. Object-Oriented Front-End Development and Multi-Paradigm Approaches in Practice
 
-## Quick Menu
+## 🚀 Quick Menu
 
 - [Project Setup](#Project-Setup)
 - [License & Copyright](#License-&-Copyright)
 
-## Project Setup
+## 🛠️ Project Setup
 
 ### Node.js with Volta
 
@@ -62,7 +62,7 @@ pnpm -F example dev
 
 Open the terminal, run the code above, and then navigate to http://localhost:2118/.
 
-## License & Copyright
+## 📜 License & Copyright
 
 All example codes in this repository are licensed under the MIT License. However, the original book text and any text partially disclosed in this repository are licensed under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
@@ -88,14 +88,14 @@ The materials herein are all © 2025 [Marpple Corporation](https://www.marppleco
 6. 멀티패러다임 프로그래밍
 7. 객체 지향 프론트엔드 개발, 그리고 멀티패러다임적 접근과 응용
 
-## 퀵 메뉴
+## 🚀 퀵 메뉴
 
 - [예제 환경 설치](#예제-환경-설치)
 - [온라인 커뮤니티 및 유튜브 채널](#온라인-커뮤니티-및-유튜브-채널)
 - [인프런 영상 강의](#인프런-영상-강의)
 - [라이센스 및 저작권](#라이센스-및-저작권)
 
-## 예제 환경 설치
+## 🛠️ 예제 환경 설치
 
 ### Node.js with Volta
 
@@ -132,7 +132,7 @@ pnpm -F example dev
 
 터미널을 열어 위 코드를 실행한 후 http://localhost:2118/ 로 접속하세요.
 
-## 온라인 커뮤니티 및 유튜브 채널
+## 🌐 온라인 커뮤니티 및 유튜브 채널
 
 온라인 커뮤니티에서 멀티패러다임 프로그래밍과 타입스크립트에 관한 더욱 폭넓은 학습을 진행할 수 있습니다. 추가로, 이 책과 관련된 퀴즈와 정답 풀이, 다양한 교육 자료가 공유되고 있어, 책의 내용을 더 깊이 이해하고 응용력을 키우는 데 큰 도움이 됩니다. 필요하신 분들은 꼭 방문해 참고해 보세요.
 
@@ -141,14 +141,16 @@ pnpm -F example dev
 - [온라인 커뮤니티 바로가기](https://ciety.xyz/@mduniv)
 - [유튜브 채널 바로가기](https://www.youtube.com/@mduniv)
 
-## 인프런 영상 강의
+<img alt="MDU" src="./img/mduniv.png" width="220px">
+
+## 🎥 인프런 영상 강의
 
 인프런에서 본 책과 관련된 여러 영상 강의를 수강할 수 있습니다. 특히 라이브 코딩 형식으로 진행되어, 코드가 발전해 나가는 과정을 좀 더 상세하고 직관적으로 볼 수 있습니다.
 
 본 책과 동일한 강의는 3월 말 본책 출간과 함께 업로드될 예정입니다. 
 - [인프런 강의 바로가기](https://www.inflearn.com/users/@mduniv)
 
-## 라이센스 및 저작권
+## 📜 라이센스 및 저작권
 
 이 저장소의 예제 코드는 모두 MIT 라이선스로 배포됩니다. 다만, 책의 원문과 이 저장소에 공개된 모든 텍스트는 [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) 라이선스를 적용받습니다.
 
