@@ -15,39 +15,12 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
 [Endorsements](book/en/0.2-Endorsements.md) <br>
 
 1. [How Multiparadigm Is Expanding Modern Languages](book/en/1.0.-How-Multiparadigm-Is-Expanding-Modern-Languages.md)
-   1. [The Iterator Pattern in OOP and First-Class Functions](book/en/1.1-The-Iterator-Pattern-in-OOP-and-First-Class-Functions.md)
-   2. [Generators: Building Iterators with Imperative Programming](book/en/1.2-Generators:-Building-Iterators-with-Imperative-Programming.md)
-   3. [The Iterator Pattern in TypeScript: The Iteration Protocol](book/en/1.3-The-Iterator-Pattern-in-TypeScript:-The-Iteration-Protocol.md)
-   4. [Functional Programming with Iterables](book/en/1.4-Functional-Programming-with-Iterables.md)
-   5. [Why the Iteration Protocol Is Designed as an Interface Rather Than Inheritance](book/en/1.5-Why-the-Iteration-Protocol-Is-Designed-as-an-Interface-Rather-Than-Inheritance.md)
 2. [Functional Programming, Type Systems, and Lisp](book/en/2.0-Functional-Programming,-Type-Systems,-and-Lisp.md)
-   1. [Type Inference, Function Types, and Generics](book/en/2.1-Type-Inference,-Function-Types,-and-Generics.md)
-   2. [Functional Type Systems in a Multi-Paradigm Language](book/en/2.2-Functional-Type-Systems-in-a-Multi-Paradigm-Language.md)
-   3. [Multiparadigm Languages and Metaprogramming – From LISP](book/en/2.3-Multiparadigm-Languages-and-Metaprogramming-–-From-LISP.md)
 3. [Code:Object:Function = Generator:Iterator:LISP = IP:OOP:FP](book/en/3.0-Code%3AObject%3AFunction-=-Generator%3AIterator%3ALISP-=-IP%3AOOP%3AFP.md)
-   1. [Code Is Data – A List Containing Logic](book/en/3.1-Code-Is-Data-–-A-List-Containing-Logic.md)
-   2. [Learning from Haskell](book/en/3.2-Learning-from-Haskell.md)
-   3. [Taking a Closer Look at Lazy Evaluation](book/en/3.3-Taking-a-Closer-Look-at-Lazy-Evaluation.md)
-   4. [Generator:Iterator:LISP – Lazy Evaluation and Safe Composition](book/en/3.4-Generator:Iterator:LISP-–-Lazy-Evaluation-and-Safe-Composition.md)
 4. Asynchronous Programming
-   1. Asynchronous as a Value
-   2. Asynchronous Handling with Laziness
-   3. Treating Asynchronous as a Type
-   4. Asynchronous Error Handling
 5. Practical Functional Programming
-   1. Working With Real World Data
-   2. Applying to More Problems
-   3. Backend Asynchronous Programming
-   4. Patternizing List Processing
 6. Multi-Paradigm Programming
-   1. Building an HTML Template Engine
-   2. Handling Concurrency with a Multi-Paradigm Approach
 7. Object-Oriented Front-End Development and Multi-Paradigm Approaches in Practice
-   1. Building a "Settings" App
-   2. Building a Todo App
-   3. Building a Todo App, Part 2
-   4. Building a Todo App, Part 3
-   5. Asynchronous Flows with UI, Promise, and Class
 
 ## Project Setup
 
@@ -113,38 +86,12 @@ The materials herein are all © 2025 [Marpple Corporation](https://www.marppleco
 [추천의 글](book/ko/0.2-추천의-글.md) <br>
 
 1. [멀티패러다임이 현대 언어를 확장하는 방법](book/ko/1.0-멀티패러다임이-현대-언어를-확장하는-방법.md)
-   1. [객체 지향 디자인 패턴의 반복자 패턴과 일급 함수](book/ko/1.1-객체-지향-디자인-패턴의-반복자-패턴과-일급-함수.md)
-   3. [타입스크립트에서의 반복자 패턴 사례 - 이터레이션 프로토콜](book/ko/1.3-타입스크립트에서의-반복자-패턴-사례---이터레이션-프로토콜.md)
-   4. [이터러블을 다루는 함수형 프로그래밍](book/ko/1.4-이터러블을-다루는-함수형-프로그래밍.md)
-   5. [이터러블 프로토콜이 상속이 아닌 인터페이스로 설계된 이유](book/ko/1.5-이터러블-프로토콜이-상속이-아닌-인터페이스로-설계된-이유.md)
 2. [함수형 프로그래밍과 타입 시스템, 그리고 LISP](book/ko/2.0-함수형-프로그래밍과-타입-시스템,-그리고-LISP.md)
-   1. [타입 추론과 함수 타입, 그리고 제네릭](book/ko/2.1-타입-추론과-함수-타입,-그리고-제네릭.md)
-   2. [멀티패러다임 언어에서의 함수형 타입 시스템](book/ko/2.2-멀티패러다임-언어에서의-함수형-타입-시스템.md)
-   3. [멀티패러다임 언어와 메타프로그래밍 - LISP으로부터](book/ko/2.3-멀티패러다임-언어와-메타프로그래밍---LISP으로부터.md)
 3. [코드:객체:함수 = Generator:Iterator:LISP = IP:OOP:FP](book/ko/3.0-코드%3A객체%3A함수-=-Generator%3AIterator%3ALISP-=-IP%3AOOP%3AFP.md)
-   1. [코드가 곧 데이터 - 로직이 담긴 리스트](book/ko/3.1-코드가-곧-데이터---로직이-담긴-리스트.md)
-   2. [하스켈로부터 배우기](book/ko/3.2-하스켈로부터-배우기.md)
-   3. [지연 평가 자세히 보기](book/ko/3.3-지연-평가-자세히-보기.md)
-   4. [Generator:Iterator:LISP - 지연 평가와 합성](book/ko/3.4-Generator%3AIterator%3ALISP---지연-평가와-합성.md)
 4. 비동기 프로그래밍
-   1. 값으로 다루는 비동기
-   2. 지연성으로 다루는 비동기
-   3. 타입으로 다루는 비동기
-   4. 비동기 에러 핸들링
 5. 실전 함수형 프로그래밍
-   1. 실전 데이터 다루기
-   2. 더 많은 문제에 적용하기
-   3. 백엔드 비동기 프로그래밍
-   4. 리스트 프로세싱 패턴화
 6. 멀티패러다임 프로그래밍
-   1. HTML 템플릿 엔진 만들기
-   2. 멀티패러다임을 활용한 동시성 핸들링
 7. 객체 지향 프론트엔드 개발, 그리고 멀티패러다임적 접근과 응용
-   1. Setting 앱 만들기
-   2. Todo 앱 만들기
-   3. Todo 앱 만들기 2부
-   4. Todo 앱 만들기 3부
-   5. 비동기와 UI, Promise와 Class
 
 ## 예제 환경 설치
 
