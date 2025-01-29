@@ -4,12 +4,6 @@
 
 Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
 
-- [Table of Contents](#Table-of-Contents)
-- [Project Setup](#Project-Setup)
-- [License & Copyright](#License-&-Copyright)
-
-## Table of Contents
-
 [View Detailed Table of Contents](book/en/README.md) <br>
 [From the Author](book/en/0.1-From-the-Author.md) <br>
 [Endorsements](book/en/0.2-Endorsements.md) <br>
@@ -21,6 +15,11 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
 5. Practical Functional Programming
 6. Multi-Paradigm Programming
 7. Object-Oriented Front-End Development and Multi-Paradigm Approaches in Practice
+
+## Quick Menu
+
+- [Project Setup](#Project-Setup)
+- [License & Copyright](#License-&-Copyright)
 
 ## Project Setup
 
@@ -73,14 +72,6 @@ The materials herein are all © 2025 [Marpple Corporation](https://www.marppleco
 
 함수형, 객체 지향, LISP을 결합한 소프트웨어 설계와 구현
 
-- [목차](#목차)
-- [예제 환경 설치](#예제-환경-설치)
-- [온라인 커뮤니티 및 유튜브 채널](#온라인-커뮤니티-및-유튜브-채널)
-- [인프런 영상 강의](#인프런-영상-강의)
-- [라이센스 및 저작권](#라이센스-및-저작권)
-
-## 목차
-
 [상세 목차](book/ko/README.md) <br>
 [지은이의 글](book/ko/0.1-지은이의-글.md) <br>
 [추천의 글](book/ko/0.2-추천의-글.md) <br>
@@ -92,6 +83,13 @@ The materials herein are all © 2025 [Marpple Corporation](https://www.marppleco
 5. 실전 함수형 프로그래밍
 6. 멀티패러다임 프로그래밍
 7. 객체 지향 프론트엔드 개발, 그리고 멀티패러다임적 접근과 응용
+
+## 퀵 메뉴
+
+- [예제 환경 설치](#예제-환경-설치)
+- [온라인 커뮤니티 및 유튜브 채널](#온라인-커뮤니티-및-유튜브-채널)
+- [인프런 영상 강의](#인프런-영상-강의)
+- [라이센스 및 저작권](#라이센스-및-저작권)
 
 ## 예제 환경 설치
 
