@@ -45,10 +45,14 @@ Open the terminal, run the code above, and then navigate to http://localhost:211
 
 터미널을 열어 위 코드를 실행한 후 http://localhost:2118/ 로 접속하세요.
 
-## License
+## License & Copyright
 
 All example codes in this repository are licensed under the MIT License.
 However, the original book text and any text partially disclosed in this repository are licensed under CC [BY-NC-SA])(https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+The materials herein are all © 2025 [Marpple Corporation](https://www.marpplecorp.com/).
+
 이 저장소의 예제 코드는 모두 MIT 라이선스로 배포됩니다.
 다만, 책의 원문과 이 저장소에 공개된 모든 텍스트는 CC [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) 라이선스를 적용받습니다.
+
+본 문서의 모든 자료는 © 2025 [마플코퍼레이션](https://www.marpplecorp.com/)의 저작권이 적용됩니다.
