@@ -1,9 +1,53 @@
-[English](https://github.com/marpple/multi-paradigm-ts?tab=readme-ov-file#multi-paradigm-programming-with-typescript) | [한국어](https://github.com/marpple/multi-paradigm-ts?tab=readme-ov-file#%EB%A9%80%ED%8B%B0%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EA%B3%BC-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8)
-
+[English](#multi-paradigm-programming-with-typescript) | [한국어](#멀티패러다임-프로그래밍과-타입스크립트)
 
 # Multi-Paradigm Programming with TypeScript
 
 Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
+
+- [Table of Contents](#Table-of-Contents)
+- [Project Setup](#Project-Setup)
+- [License & Copyright](#License-&-Copyright)
+
+## Table of Contents
+
+[View Detailed Table of Contents](book/en/README.md) <br>
+[From the Author](book/en/0.1-From-the-Author.md) <br>
+[Endorsements](book/en/0.2-Endorsements.md) <br>
+
+1. [How Multiparadigm Is Expanding Modern Languages](book/en/1.0.-How-Multiparadigm-Is-Expanding-Modern-Languages.md)
+   1. [The Iterator Pattern in OOP and First-Class Functions](book/en/1.1-The-Iterator-Pattern-in-OOP-and-First-Class-Functions.md)
+   2. [Generators: Building Iterators with Imperative Programming](book/en/1.2-Generators:-Building-Iterators-with-Imperative-Programming.md)
+   3. [The Iterator Pattern in TypeScript: The Iteration Protocol](book/en/1.3-The-Iterator-Pattern-in-TypeScript:-The-Iteration-Protocol.md)
+   4. [Functional Programming with Iterables](book/en/1.4-Functional-Programming-with-Iterables.md)
+   5. [Why the Iteration Protocol Is Designed as an Interface Rather Than Inheritance](book/en/1.5-Why-the-Iteration-Protocol-Is-Designed-as-an-Interface-Rather-Than-Inheritance.md)
+2. [Functional Programming, Type Systems, and Lisp](book/en/2.0-Functional-Programming,-Type-Systems,-and-Lisp.md)
+   1. [Type Inference, Function Types, and Generics](book/en/2.1-Type-Inference,-Function-Types,-and-Generics.md)
+   2. [Functional Type Systems in a Multi-Paradigm Language](book/en/2.2-Functional-Type-Systems-in-a-Multi-Paradigm-Language.md)
+   3. [Multiparadigm Languages and Metaprogramming – From LISP](book/en/2.3-Multiparadigm-Languages-and-Metaprogramming-–-From-LISP.md)
+3. [Code:Object:Function = Generator:Iterator:LISP = IP:OOP:FP](book/en/3.0-Code%3AObject%3AFunction-=-Generator%3AIterator%3ALISP-=-IP%3AOOP%3AFP.md)
+   1. [Code Is Data – A List Containing Logic](book/en/3.1-Code-Is-Data-–-A-List-Containing-Logic.md)
+   2. [Learning from Haskell](book/en/3.2-Learning-from-Haskell.md)
+   3. [Taking a Closer Look at Lazy Evaluation](book/en/3.3-Taking-a-Closer-Look-at-Lazy-Evaluation.md)
+   4. [Generator:Iterator:LISP – Lazy Evaluation and Safe Composition](book/en/3.4-Generator:Iterator:LISP-–-Lazy-Evaluation-and-Safe-Composition.md)
+4. Asynchronous Programming
+   1. Asynchronous as a Value
+   2. Asynchronous Handling with Laziness
+   3. Treating Asynchronous as a Type
+   4. Asynchronous Error Handling
+5. Practical Functional Programming
+   1. Working With Real World Data
+   2. Applying to More Problems
+   3. Backend Asynchronous Programming
+   4. Patternizing List Processing
+6. Multi-Paradigm Programming
+   1. Building an HTML Template Engine
+   2. Handling Concurrency with a Multi-Paradigm Approach
+7. Object-Oriented Front-End Development and Multi-Paradigm Approaches in Practice
+   1. Building a "Settings" App
+   2. Building a Todo App
+   3. Building a Todo App, Part 2
+   4. Building a Todo App, Part 3
+   5. Asynchronous Flows with UI, Promise, and Class
 
 ## Project Setup
 
@@ -56,15 +100,15 @@ The materials herein are all © 2025 [Marpple Corporation](https://www.marppleco
 
 함수형, 객체 지향, LISP을 결합한 소프트웨어 설계와 구현
 
-- [목차]()
-- [예제 환경 설치]()
-- [온라인 커뮤니티 및 유튜브 채널]()
-- [인프런 영상 강의 및 유튜브 채널]()
-- [라이센스 및 저작권]()
+- [목차](#목차)
+- [예제 환경 설치](#예제-환경-설치)
+- [온라인 커뮤니티 및 유튜브 채널](#온라인-커뮤니티-및-유튜브-채널)
+- [인프런 영상 강의](#인프런-영상-강의)
+- [라이센스 및 저작권](#라이센스-및-저작권)
 
 ## 목차
 
-[상세 목차](bool/ko/0.0-목차.md) <br>
+[상세 목차](book/ko/README.md) <br>
 [지은이의 글](book/ko/0.1-지은이의-글.md) <br>
 [추천의 글](book/ko/0.2-추천의-글.md) <br>
 
@@ -148,7 +192,7 @@ pnpm -F example dev
 - [온라인 커뮤니티 바로가기](https://ciety.xyz/@mduniv)
 - [유튜브 채널 바로가기](https://www.youtube.com/@mduniv)
 
-## 인프런 영상 강의 및 유튜브 채널
+## 인프런 영상 강의
 
 인프런에서 본 책과 관련된 여러 영상 강의를 수강할 수 있습니다. 특히 라이브 코딩 형식으로 진행되어, 코드가 발전해 나가는 과정을 좀 더 상세하고 직관적으로 볼 수 있습니다.
 
