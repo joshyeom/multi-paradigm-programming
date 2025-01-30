@@ -62,11 +62,27 @@ pnpm -F example dev
 
 Open the terminal, run the code above, and then navigate to http://localhost:2118/.
 
+## 🎥 Inflearn Video Course 
+
+You can take various video courses related to this book on Inflearn.  
+These courses are conducted in a live coding format, allowing you to see the code evolve in real-time for a more detailed and intuitive learning experience.
+
+The course corresponding to this book will be uploaded at the end of March, coinciding with the official book release.
+
+- [Go to the Multi-Paradigm Programming and TypeScript Video Course](https://www.inflearn.com/en/course/functional-es6)
+
+> Inflearn sponsors the creation of learning content related to "Multi-Paradigm Programming and TypeScript."
+>
+> <a href="https://www.inflearn.com/en/"><img alt="MDU" src="./img/inflearn.png" width="140px"></a>
+
 ## 📜 License & Copyright
 
 All example codes in this repository are licensed under the MIT License. However, the original book text and any text partially disclosed in this repository are licensed under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-The materials herein are all © 2025 [Marpple Corporation](https://www.marpplecorp.com/).
+> The materials herein are all © 2025 [Marpple Corporation](https://www.marpplecorp.com/).
+>
+> <a href="https://www.marpplecorp.com/"><img alt="Marpple Corporation" src="./img/MCO.png" width="200px"></a>
+
 
 ---
 
@@ -136,23 +152,30 @@ pnpm -F example dev
 
 온라인 커뮤니티에서 멀티패러다임 프로그래밍과 타입스크립트에 관한 더욱 폭넓은 학습을 진행할 수 있습니다. 추가로, 이 책과 관련된 퀴즈와 정답 풀이, 다양한 교육 자료가 공유되고 있어, 책의 내용을 더 깊이 이해하고 응용력을 키우는 데 큰 도움이 됩니다. 필요하신 분들은 꼭 방문해 참고해 보세요.
 
-마플개발대학(MDU)은 소프트웨어 대학을 콘셉트로 활동하는 커뮤니티로, 개발자들과 함께 성장하며 프로그래밍의 즐거움을 나누고, 보다 깊이 있는 소프트웨어 공학 문화를 만들어가기 위해 설립되었습니다.
-
 - [온라인 커뮤니티 바로가기](https://ciety.xyz/@mduniv)
 - [유튜브 채널 바로가기](https://www.youtube.com/@mduniv)
 
-<a href="https://ciety.xyz/@mduniv"><img alt="MDU" src="./img/mduniv.png" width="220px"></a>
+> 마플개발대학(MDU)은 소프트웨어 대학을 콘셉트로 활동하는 커뮤니티로, 개발자들과 함께 성장하며 프로그래밍의 즐거움을 나누고, 보다 깊이 있는 소프트웨어 공학 문화를 만들어가기 위해 설립되었습니다.
+> 
+> <a href="https://ciety.xyz/@mduniv"><img alt="MDU" src="./img/mduniv.png" width="160px"></a>
 
-## 🎥 인프런 영상 강의
+## 🎥 인프런 영상 강의 
 
-인프런에서 본 책과 관련된 여러 영상 강의를 수강할 수 있습니다. 특히 라이브 코딩 형식으로 진행되어, 코드가 발전해 나가는 과정을 좀 더 상세하고 직관적으로 볼 수 있습니다. 
+인프런에서 본 책과 관련된 여러 영상 강의를 수강할 수 있습니다. 특히 라이브 코딩 형식으로 진행되어, 코드가 발전해 나가는 과정을 좀 더 상세하고 직관적으로 볼 수 있습니다.
 
-본 책과 동일한 강의는 3월 말 본책 출간과 함께 업로드될 예정입니다. 
+본 책과 동일한 강의는 3월 말 본책 출간과 함께 업로드될 예정입니다.
 
-- [인프런 강의 바로가기](https://www.inflearn.com/users/@mduniv)
+- [멀티패러다임 프로그래밍과 타입스크립트 영상 강의 바로가기](https://www.inflearn.com/course/functional-es6)
+
+> 인프런에서 "멀티패러다임 프로그래밍과 타입스크립트" 관련 학습 컨텐츠 제작을 후원합니다.
+> 
+> <a href="https://www.inflearn.com/"><img alt="inflearn" src="./img/inflearn.png" width="140px"></a>
 
 ## 📜 라이센스 및 저작권
 
 이 저장소의 예제 코드는 모두 MIT 라이선스로 배포됩니다. 다만, 책의 원문과 이 저장소에 공개된 모든 텍스트는 [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) 라이선스를 적용받습니다.
 
-본 문서의 모든 자료는 © 2025 [마플코퍼레이션](https://www.marpplecorp.com/)의 저작권이 적용됩니다.
+> 본 문서의 모든 자료는 © 2025 [마플코퍼레이션](https://www.marpplecorp.com/)의 저작권이 적용됩니다.
+> 
+> <a href="https://www.marpplecorp.com/"><img alt="Marpple Corporation" src="./img/MCO.png" width="200px"></a> 
+
