@@ -141,7 +141,7 @@ pnpm -F example dev
 - [온라인 커뮤니티 바로가기](https://ciety.xyz/@mduniv)
 - [유튜브 채널 바로가기](https://www.youtube.com/@mduniv)
 
-<img alt="MDU" src="./img/mduniv.png" width="220px">
+<a href="https://ciety.xyz/@mduniv"><img alt="MDU" src="./img/mduniv.png" width="220px"></a>
 
 ## 🎥 인프런 영상 강의
 
