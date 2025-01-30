@@ -206,7 +206,7 @@ function code_5_26_27() {
   const count = (start = 1) => range(start, Infinity);
 
   function* repeatApply<A>(f: (acc: A) => A, acc: A) {
-    while (true) yield (acc = f(acc));
+    while (true) yield acc = f(acc);
   }
 
   const nextCollatzValue = (num: number) =>
