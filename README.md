@@ -167,15 +167,15 @@ pnpm -F example dev
 
 - [멀티패러다임 프로그래밍과 타입스크립트 영상 강의 바로가기](https://www.inflearn.com/course/functional-es6)
 
-> 인프런에서 "멀티패러다임 프로그래밍과 타입스크립트" 관련 학습 컨텐츠 제작을 후원합니다.
-> 
 > <a href="https://www.inflearn.com/"><img alt="inflearn" src="./img/inflearn.png" width="140px"></a>
+> 인프런에서 "멀티패러다임 프로그래밍과 타입스크립트" 관련 학습 컨텐츠 제작을 후원합니다.
+
 
 ## 📜 라이센스 및 저작권
 
 이 저장소의 예제 코드는 모두 MIT 라이선스로 배포됩니다. 다만, 책의 원문과 이 저장소에 공개된 모든 텍스트는 [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) 라이선스를 적용받습니다.
 
+> <a href="https://www.marpplecorp.com/"><img alt="Marpple Corporation" src="./img/MCO.png" width="200px"></a>
 > 본 문서의 모든 자료는 © 2025 [마플코퍼레이션](https://www.marpplecorp.com/)의 저작권이 적용됩니다.
-> 
-> <a href="https://www.marpplecorp.com/"><img alt="Marpple Corporation" src="./img/MCO.png" width="200px"></a> 
+
 
