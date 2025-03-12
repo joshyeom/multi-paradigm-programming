@@ -8,7 +8,7 @@ export class AlertView extends View<{ message: string }> {
     return html`
       <div>
         <div class="message">${this.data.message}</div>
-        <button>Confirm</button>  
+        <button>OK</button>  
       </div>
     `;
   }

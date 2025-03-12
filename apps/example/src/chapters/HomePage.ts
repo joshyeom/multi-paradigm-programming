@@ -34,7 +34,6 @@ export class HomePage extends Page<object> {
           <li><a href="/7-5-2">7-5-2</a></li>
         </ul>  
       </div>
-      
-    `
+    `;
   }
 }

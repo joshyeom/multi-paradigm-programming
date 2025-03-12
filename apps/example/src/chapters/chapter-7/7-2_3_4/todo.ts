@@ -25,7 +25,7 @@ class TodoItemView extends View<Todo> {
   }
 
   protected override onRender() {
-    this.addEventListener(Toggled, (e) => this.syncCompleted());
+    this.addEventListener(Toggled, () => this.syncCompleted());
   }
 
   private syncCompleted() {
@@ -114,7 +114,10 @@ export function main() {
     { title: 'Test', completed: false },
   ];
 
+  const todoPage = new TodoPage(todos);
+  // window.todoPage = new TodoPage(todos);
+
   document.querySelector('#body')!.append(
-    new TodoPage(todos).render()
+    todoPage.render()
   );
 }
