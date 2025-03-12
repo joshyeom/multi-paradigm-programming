@@ -69,7 +69,7 @@ These courses are conducted in a live coding format, allowing you to see the cod
 
 The course corresponding to this book will be uploaded at the end of March, coinciding with the official book release.
 
-- [Go to the Multi-Paradigm Programming and TypeScript Video Course 🖥️](https://www.inflearn.com/en/course/functional-es6)
+- Go to the Multi-Paradigm Programming and TypeScript Video Course (in preparation) 🖥️
 
 > Inflearn sponsors the creation of learning content related to "Multi-Paradigm Programming and TypeScript."
 >
@@ -154,7 +154,7 @@ pnpm -F example dev
 
 본 책과 동일한 강의는 3월 말 본책 출간과 함께 업로드될 예정입니다.
 
-- [멀티패러다임 프로그래밍과 타입스크립트 영상 강의 바로가기 🖥](https://www.inflearn.com/course/functional-es6)
+- 멀티패러다임 프로그래밍과 타입스크립트 영상 강의 바로가기 (준비중) 🖥 
 
 > 인프런에서 "멀티패러다임 프로그래밍과 타입스크립트" 관련 학습 컨텐츠 제작을 후원합니다.
 > 
