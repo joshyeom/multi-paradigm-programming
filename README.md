@@ -1,4 +1,4 @@
-[English](#multi-paradigm-programming) | [한국어](#멀티패러다임-프로그래밍과-타입스크립트)
+[English](#multi-paradigm-programming) | [한국어](#멀티패러다임-프로그래밍)
 
 ---
 
