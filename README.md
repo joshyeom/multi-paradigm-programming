@@ -1,10 +1,10 @@
-[English](#multi-paradigm-programming-with-typescript) | [한국어](#멀티패러다임-프로그래밍과-타입스크립트)
+[English](#multi-paradigm-programming) | [한국어](#멀티패러다임-프로그래밍과-타입스크립트)
 
 ---
 
-# Multi-Paradigm Programming with TypeScript
+# Multi-Paradigm Programming
 
-Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
+Combining Object-Oriented, Functional, and Imperative Approaches for Software Development and Design
 
 ## 📖 Table of Contents (Book)
 
@@ -22,8 +22,9 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
 
 ## 🚀 Quick Menu
 
-- [Project Setup](#Project-Setup)
-- [License & Copyright](#License-&-Copyright)
+- [Project Setup](#%EF%B8%8F-project-setup)
+- [Video ](#-video-course)
+- [License & Copyright](#-license--copyright)
 
 ## 🛠️ Project Setup
 
@@ -62,16 +63,16 @@ pnpm -F example dev
 
 Open the terminal, run the code above, and then navigate to http://localhost:2118/.
 
-## 🎥 Inflearn Video Course 
+## 🎥 Video Course 
 
 You can take various video courses related to this book on Inflearn.  
 These courses are conducted in a live coding format, allowing you to see the code evolve in real-time for a more detailed and intuitive learning experience.
 
 The course corresponding to this book will be uploaded at the end of March, coinciding with the official book release.
 
-- Go to the Multi-Paradigm Programming and TypeScript Video Course (in preparation) 🖥️
+- Go to the Multi-Paradigm Programming Video Course (in preparation) 🖥️
 
-> Inflearn sponsors the creation of learning content related to "Multi-Paradigm Programming and TypeScript."
+> Inflearn sponsors the creation of learning content related to "Multi-Paradigm Programming."
 >
 > <a href="https://www.inflearn.com/en/"><img alt="MDU" src="./img/inflearn.png" width="140px"></a>
 
@@ -86,9 +87,9 @@ All example codes in this repository are licensed under the MIT License. However
 
 ---
 
-# 멀티패러다임 프로그래밍과 타입스크립트
+# 멀티패러다임 프로그래밍
 
-함수형, 객체 지향, LISP을 결합한 소프트웨어 설계와 구현
+객체지향, 함수형, 명령형을 결합한 소프트웨어 개발과 설계
 
 ## 📖 책의 목차
 
@@ -106,10 +107,10 @@ All example codes in this repository are licensed under the MIT License. However
 
 ## 🚀 퀵 메뉴
 
-- [예제 환경 설치](#예제-환경-설치)
-- [온라인 커뮤니티 및 유튜브 채널](#온라인-커뮤니티-및-유튜브-채널)
-- [인프런 영상 강의](#인프런-영상-강의)
-- [라이센스 및 저작권](#라이센스-및-저작권)
+- [예제 환경 설치](#%EF%B8%8F-예제-환경-설치)
+- [인프런 영상 강의](#-인프런-영상-강의)
+- [온라인 커뮤니티 및 유튜브 채널](#-온라인-커뮤니티-및-유튜브-채널)
+- [라이센스 및 저작권](#-라이센스-및-저작권)
 
 ## 🛠️ 예제 환경 설치
 
@@ -154,15 +155,15 @@ pnpm -F example dev
 
 본 책과 동일한 강의는 3월 말 본책 출간과 함께 업로드될 예정입니다.
 
-- 멀티패러다임 프로그래밍과 타입스크립트 영상 강의 바로가기 (준비중) 🖥 
+- 멀티패러다임 프로그래밍 영상 강의 바로가기 (준비중) 🖥 
 
-> 인프런에서 "멀티패러다임 프로그래밍과 타입스크립트" 관련 학습 컨텐츠 제작을 후원합니다.
+> 인프런에서 "멀티패러다임 프로그래밍" 관련 학습 컨텐츠 제작을 후원합니다.
 > 
 > <a href="https://www.inflearn.com/"><img alt="inflearn" src="./img/inflearn.png" width="140px"></a>
 
 ## 🌐 온라인 커뮤니티 및 유튜브 채널
 
-온라인 커뮤니티에서 멀티패러다임 프로그래밍과 타입스크립트에 관한 더욱 폭넓은 학습을 진행할 수 있습니다. 추가로, 이 책과 관련된 퀴즈와 정답 풀이, 다양한 교육 자료가 공유되고 있어, 책의 내용을 더 깊이 이해하고 응용력을 키우는 데 큰 도움이 됩니다. 필요하신 분들은 꼭 방문해 참고해 보세요.
+온라인 커뮤니티에서 멀티패러다임 프로그래밍에 관한 더욱 폭넓은 학습을 진행할 수 있습니다. 추가로, 이 책과 관련된 퀴즈와 정답 풀이, 다양한 교육 자료가 공유되고 있어, 책의 내용을 더 깊이 이해하고 응용력을 키우는 데 큰 도움이 됩니다. 필요하신 분들은 꼭 방문해 참고해 보세요.
 
 - [온라인 커뮤니티 바로가기 📢](https://ciety.xyz/@mduniv)
 - [유튜브 채널 바로가기 📺](https://www.youtube.com/@mduniv)
