@@ -76,6 +76,10 @@ The course corresponding to this book will be uploaded at the end of March, coin
 >
 > <a href="https://www.inflearn.com/en/"><img alt="MDU" src="./img/inflearn.png" width="140px"></a>
 
+## 📝 Publication
+
+The Korean version of **『Multi-Paradigm Programming』** is published by [Hanbit Media](https://www.hanbit.co.kr/).
+
 ## 📜 License & Copyright
 
 All example codes in this repository are licensed under the MIT License. However, the original book text and any text partially disclosed in this repository are licensed under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
@@ -171,6 +175,12 @@ pnpm -F example dev
 > 마플개발대학(MDU)은 소프트웨어 대학을 콘셉트로 활동하는 커뮤니티로, 개발자들과 함께 성장하며 프로그래밍의 즐거움을 나누고, 보다 깊이 있는 소프트웨어 공학 문화를 만들어가기 위해 설립되었습니다.
 >
 > <a href="https://ciety.xyz/@mduniv"><img alt="MDU" src="./img/mduniv.png" width="160px"></a>
+
+## 📝 출판
+
+본 도서 『멀티패러다임 프로그래밍』은 [한빛미디어](https://www.hanbit.co.kr/)에서 출판되었습니다.
+
+> <a href="https://www.hanbit.co.kr/"><img alt="MDU" src="./img/hanbit_plus" width="140px"></a>
 
 ## 📜 라이센스 및 저작권
 
