@@ -180,7 +180,7 @@ pnpm -F example dev
 
 본 도서 『멀티패러다임 프로그래밍』은 [한빛미디어](https://www.hanbit.co.kr/)에서 출판되었습니다.
 
-> <a href="https://www.hanbit.co.kr/"><img alt="MDU" src="./img/hanbit_plus" width="140px"></a>
+> <a href="https://www.hanbit.co.kr/"><img alt="hanbit" src="./img/hanbit_plus.png" width="140px"></a>
 
 ## 📜 라이센스 및 저작권
 
