@@ -119,7 +119,7 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
       3. zip
       4. When You Need the Index as a Value
       5. Collatz Conjecture: Counting Until It Becomes 1
-      6. take, takeUntil, takeWhile Instead of break
+      6. take, takeUntilInclusive, takeWhile Instead of break
       7. Logic Created by Combining Functions
    3. Backend Asynchronous Programming
       1. The Payment Process Problem in a Commerce Platform

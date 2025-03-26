@@ -119,7 +119,7 @@
       3. zip
       4. 인덱스가 값으로 필요할 때
       5. 콜라츠 추측 - 1이 될 때까지 세기
-      6. break를 대신하는 take, takeUntil, takeWhile
+      6. break를 대신하는 take, takeUntilInclusive, takeWhile
       7. 함수의 조합으로 만들어내는 로직
    3. 백엔드 비동기 프로그래밍
       1. 커머스 플랫폼의 결제 프로세스 문제
