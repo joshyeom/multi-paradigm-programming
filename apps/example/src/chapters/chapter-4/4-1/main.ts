@@ -227,14 +227,14 @@ async function code_4_12() {
 }
 
 export async function main() {
-  await code_4_3();
-  await code_4_4();
-  await code_4_5();
-  await code_4_6();
-  await code_4_7();
-  await code_4_8();
-  await code_4_9();
-  await code_4_10();
-  await code_4_11();
+  // await code_4_3();
+  // await code_4_4();
+  // await code_4_5();
+  // await code_4_6();
+  // await code_4_7();
+  // await code_4_8();
+  // await code_4_9();
+  // await code_4_10();
+  // await code_4_11();
   await code_4_12();
 }

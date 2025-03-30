@@ -1,4 +1,4 @@
-import { filter, fx2, map, reduce, take } from '../../../lib/fx2';
+import { filter, fx, map, reduce, take } from '../../../lib/fx2';
 
 function code_3_1() {
   function sumOfSquaresOfOddNumbers(limit: number, list: number[]): number {
@@ -93,7 +93,7 @@ function code_3_6() {
 function code_3_7() {
   // 함수형 코드:
   const sumOfSquaresOfOddNumbers = (limit: number, list: number[]): number =>
-    fx2(list)
+    fx(list)
       .filter(a => a % 2 === 1)
       .map(a => a * a)
       .take(limit)

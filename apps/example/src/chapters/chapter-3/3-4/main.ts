@@ -1,4 +1,4 @@
-import { fx2, head, take } from '../../../lib/fx2';
+import { fx, head, take } from '../../../lib/fx2';
 
 function code_3_41() {
   function find<A>(f: (a: A) => boolean, iterable: Iterable<A>): A | undefined {
@@ -71,7 +71,7 @@ function code_3_44() {
 
 function code_3_46_47() {
   const find = <A>(f: (a: A) => boolean, iterable: Iterable<A>): A | undefined =>
-    fx2(iterable)
+    fx(iterable)
       .filter(f)
       .to(head);
 
@@ -107,7 +107,7 @@ const isOdd = (a: number) => a % 2 === 1;
 
 function code_3_50_53() {
   function every<A>(f: (a: A) => boolean, iterable: Iterable<A>): boolean {
-    return fx2(iterable)
+    return fx(iterable)
       .map(f)
       .reduce((a, b) => a && b, true); // [a: boolean], [b: boolean]
   }
@@ -118,7 +118,7 @@ function code_3_50_53() {
   // false
 
   function some<A>(f: (a: A) => boolean, iterable: Iterable<A>): boolean {
-    return fx2(iterable)
+    return fx(iterable)
       .map(f)
       .reduce((a, b) => a || b, false); // [a: boolean], [b: boolean]
   }
@@ -131,7 +131,7 @@ function code_3_50_53() {
 
 function code_3_54_55() {
   function some<A>(f: (a: A) => boolean, iterable: Iterable<A>): boolean {
-    return fx2(iterable)
+    return fx(iterable)
       .map(f)
       .filter(a => a)
       .take(1)
@@ -144,7 +144,7 @@ function code_3_54_55() {
   // false
 
   function every<A>(f: (a: A) => boolean, iterable: Iterable<A>): boolean {
-    return fx2(iterable)
+    return fx(iterable)
       .map(f)
       .filter(a => !a)
       .take(1)
@@ -164,7 +164,7 @@ function accumulateWith<A>(
   f: (a: A) => boolean,
   iterable: Iterable<A>
 ): boolean {
-  return fx2(iterable)
+  return fx(iterable)
     .map(f)
     .filter(taking)
     .take(1)

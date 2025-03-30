@@ -235,6 +235,8 @@ function code_5_26_27() {
   console.log(collatzCount(1)); // 3
   console.log(collatzCount(4)); // 2
   console.log(collatzCount(5)); // 5
+  console.log(collatzCount(6)); // 8
+  console.log(collatzCount(11)); // 14
 }
 
 function code_5_28() {
@@ -254,21 +256,21 @@ function code_5_28() {
   // takeWhile: 0 false
 
   fx([0, 10, 1, 3, 5, 0, 4, 2])
-    .takeUntil(a => {
-      console.log('takeUntil:', a, a === 5);
+    .takeUntilInclusive(a => {
+      console.log('takeUntilInclusive:', a, a === 5);
       return a === 5;
     })
     .forEach(a => console.log('forEach:', a));
 
-  // takeUntil: 0 false
+  // takeUntilInclusive: 0 false
   // forEach: 0
-  // takeUntil: 10 false
+  // takeUntilInclusive: 10 false
   // forEach: 10
-  // takeUntil: 1 false
+  // takeUntilInclusive: 1 false
   // forEach: 1
-  // takeUntil: 3 false
+  // takeUntilInclusive: 3 false
   // forEach: 3
-  // takeUntil: 5 true
+  // takeUntilInclusive: 5 true
   // forEach: 5
 }
 

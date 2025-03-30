@@ -98,7 +98,7 @@ export async function fromAsync<T>(
   return arr;
 }
 
-export function fx2<A>(iterable: Iterable<A>): FxIterable<A> {
+export function fx<A>(iterable: Iterable<A>): FxIterable<A> {
   return new FxIterable(iterable);
 }
 
@@ -110,11 +110,11 @@ export class FxIterable<A> {
   }
 
   map<B>(f: (a: A) => B): FxIterable<B> {
-    return fx2(map(f, this));
+    return fx(map(f, this));
   }
 
   filter(f: (a: A) => boolean): FxIterable<A> {
-    return fx2(filter(f, this));
+    return fx(filter(f, this));
   }
 
   reject(f: (a: A) => boolean): FxIterable<A> {
@@ -122,7 +122,7 @@ export class FxIterable<A> {
   }
 
   take(limit: number): FxIterable<A> {
-    return fx2(take(limit, this));
+    return fx(take(limit, this));
   }
 
   forEach(f: (a: A) => void): void {
@@ -130,7 +130,7 @@ export class FxIterable<A> {
   }
 
   chunk(size: number) {
-    return fx2(chunk(size, this));
+    return fx(chunk(size, this));
   }
 
   reduce<Acc>(f: (acc: Acc, a: A) => Acc, acc: Acc): Acc;
@@ -150,6 +150,6 @@ export class FxIterable<A> {
   }
 
   chain<B>(f: (iterable: this) => Iterable<B>): FxIterable<B> {
-    return fx2(f(this)); // new FxIterable(f(this));
+    return fx(f(this)); // new FxIterable(f(this));
   }
 }

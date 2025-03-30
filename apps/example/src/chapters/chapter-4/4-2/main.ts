@@ -1,4 +1,4 @@
-import { fx2, take } from '../../../lib/fx2';
+import { fx, take } from '../../../lib/fx2';
 
 function delay<T>(time: number, value: T): Promise<T> {
   return new Promise((resolve) => setTimeout(resolve, time, value));
@@ -206,7 +206,7 @@ async function code_4_17() {
   console.log([...chunk(2, [1, 2, 3, 4, 5])]);
   // [[1, 2], [3, 4], [5]]
 
-  fx2([1, 2, 3, 4, 5])
+  fx([1, 2, 3, 4, 5])
     .chunk(2)
     .map(arr => arr.map(a => a * 10)) // [arr: number[]], [a: number]
     .forEach(arr => console.log(arr));
@@ -227,7 +227,7 @@ async function fromAsync<T>(
 
 async function code_4_18() {
   const executeWithLimit = <T>(fs: (() => Promise<T>)[], limit: number): Promise<T[]> =>
-    fx2(fs)
+    fx(fs)
       .chunk(limit)
       .map(fs => fs.map(f => f()))
       .map(ps => Promise.all(ps))
@@ -253,7 +253,7 @@ async function code_4_18() {
 
 async function code_4_19() {
   const executeWithLimit = <T>(fs: (() => Promise<T>)[], limit: number): Promise<T[]> =>
-    fx2(fs)
+    fx(fs)
       .map(f => f())
       .chunk(limit)
       .map(ps => Promise.all(ps))

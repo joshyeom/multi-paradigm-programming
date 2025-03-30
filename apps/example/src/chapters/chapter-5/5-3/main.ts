@@ -144,7 +144,7 @@ async function code_5_36() {
       fx(range(1, Infinity))
         .toAsync()
         .map(page => PgApi.getPayments(page))
-        .takeUntil(({length}) => length < 3)
+        .takeUntilInclusive(({length}) => length < 3)
         .flat()
         .toArray();
 
@@ -160,7 +160,7 @@ async function code_5_37() {
       fx(range(1, Infinity))
         .toAsync()
         .map(page => PgApi.getPayments(page))
-        .takeUntil(({length}) => length < 3)
+        .takeUntilInclusive(({length}) => length < 3)
         .flat()
         .toArray();
 
@@ -187,7 +187,7 @@ async function code_5_38_39() {
       fx(range(1, Infinity))
         .toAsync()
         .map(page => PgApi.getPayments(page))
-        .takeUntil(({length}) => length < 3)
+        .takeUntilInclusive(({length}) => length < 3)
         .flat()
         .toArray();
 
@@ -232,7 +232,7 @@ async function code_5_40() {
       fx(range(1, Infinity))
         .toAsync()
         .map(page => PgApi.getPayments(page))
-        .takeUntil(({length}) => length < 3)
+        .takeUntilInclusive(({length}) => length < 3)
         .flat()
         .toArray();
 

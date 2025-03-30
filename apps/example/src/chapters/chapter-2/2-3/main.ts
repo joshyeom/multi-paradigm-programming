@@ -1,4 +1,4 @@
-import { map, filter, forEach, naturals, reduce, fx2, FxIterable } from '../../../lib/fx2';
+import { map, filter, forEach, naturals, reduce, fx, FxIterable } from '../../../lib/fx2';
 
 function code_2_28_29() {
   class FxIterable<A> {
@@ -106,7 +106,7 @@ function code_2_34() {
 
 function code_2_35() {
   // 초기값 없을 때
-  const num = fx2(naturals(5)) // FxIterable<number> (1, 2, 3, 4, 5)
+  const num = fx(naturals(5)) // FxIterable<number> (1, 2, 3, 4, 5)
     .filter(n => n % 2 === 1) // FxIterable<number> (1, 3, 5)
     .map(n => n * 10) // FxIterable<number> (10, 30, 50)
     .reduce((a, b) => a + b); // [a: number] [b: number]
@@ -115,7 +115,7 @@ function code_2_35() {
   // 90
 
   // 초기값 있을 때
-  const num2 = fx2(naturals(5)) // FxIterable<number> (1, 2, 3, 4, 5)
+  const num2 = fx(naturals(5)) // FxIterable<number> (1, 2, 3, 4, 5)
     .filter(n => n % 2 === 1) // FxIterable<number> (1, 3, 5)
     .map(n => n * 10) // FxIterable<number> (10, 30, 50)
     .reduce((a, b) => a + b, 10); // [a: number] [b: number]
@@ -149,7 +149,7 @@ function code_2_40() {
     }
   }
 
-  const [first, second] = fx2([1, 2, 3, 4]).map(a => a + 10).toArray();
+  const [first, second] = fx([1, 2, 3, 4]).map(a => a + 10).toArray();
   console.log(first, second); // 11 12
 }
 
@@ -164,7 +164,7 @@ function code_2_41() {
     // ... 생략된 메서드들 ...
   }
 
-  const [first, second] = fx2([1, 2, 3, 4]).map(a => a + 10);
+  const [first, second] = fx([1, 2, 3, 4]).map(a => a + 10);
   console.log(first, second); // 11 12
 }
 
@@ -189,7 +189,7 @@ function code_2_47_48() {
 
   const isOdd = (a: number) => a % 2 === 1;
 
-  const [first, second] = fx2([1, 2, 3, 4, 5, 6])
+  const [first, second] = fx([1, 2, 3, 4, 5, 6])
     .map(a => a + 10)
     .reject(isOdd);
 
@@ -198,7 +198,7 @@ function code_2_47_48() {
 }
 
 function code_2_49() {
-  const sorted = fx2([5, 2, 3, 1, 4, 5, 3])
+  const sorted = fx([5, 2, 3, 1, 4, 5, 3])
     .filter(n => n % 2 === 1)
     .map(n => n * 10)
     .toArray()
@@ -207,7 +207,7 @@ function code_2_49() {
   console.log(sorted);
   // [10, 30, 30, 50, 50]
 
-  const sorted2 = [...fx2([5, 2, 3, 1, 4, 5, 3])
+  const sorted2 = [...fx([5, 2, 3, 1, 4, 5, 3])
     .filter(n => n % 2 === 1)
     .map(n => n * 10)
   ]
@@ -233,7 +233,7 @@ function code_2_50() {
     }
   }
 
-  const sorted = fx2([5, 2, 3, 1, 4, 5, 3])
+  const sorted = fx([5, 2, 3, 1, 4, 5, 3])
     .filter(n => n % 2 === 1)
     .map(n => n * 10)
     .to(iterable => [...iterable])
@@ -299,7 +299,7 @@ function code_2_51() {
 }
 
 function code_2_52() {
-  const set = fx2([5, 2, 3, 1, 4, 5, 3])
+  const set = fx([5, 2, 3, 1, 4, 5, 3])
     .filter(n => n % 2 === 1)
     .map(n => n * 10)  // [50, 30, 10, 50, 30]
     .to(iterable => new Set(iterable));
@@ -307,7 +307,7 @@ function code_2_52() {
   console.log(set);
   // Set(3) {50, 30, 10}
 
-  const size = fx2([5, 2, 3, 1, 4, 5, 3])
+  const size = fx([5, 2, 3, 1, 4, 5, 3])
     .filter(n => n % 2 === 1)
     .map(n => n * 10)
     .to(iterable => new Set(iterable))
@@ -352,7 +352,7 @@ function code_2_54() {
 }
 
 function code_2_55() {
-  const result = fx2([5, 2, 3, 1, 4, 5, 3])
+  const result = fx([5, 2, 3, 1, 4, 5, 3])
     .filter(n => n % 2 === 1)
     .map(n => n * 10)                      // [50, 30, 10, 50, 30]
     .chain(iterable => new Set(iterable))  // Set으로 중복 제거, Set도 이터러블
@@ -361,7 +361,7 @@ function code_2_55() {
   console.log(result); // [result: number]
   // 90
 
-  const result2 = fx2([5, 2, 3, 1, 4, 5, 3])
+  const result2 = fx([5, 2, 3, 1, 4, 5, 3])
     .filter(n => n % 2 === 1)
     .map(n => n * 10)                      // [50, 30, 10, 50, 30]
     .chain(iterable => new Set(iterable))  // Set으로 중복 제거, Set도 이터러블
