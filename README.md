@@ -1,99 +1,12 @@
-[English](#multi-paradigm-programming) | [한국어](#멀티패러다임-프로그래밍)
-
----
-
-# Multi-Paradigm Programming
-
-Combining Object-Oriented, Functional, and Imperative Approaches for Software Development and Design
-
-## 📖 Table of Contents (Book)
-
-[View Detailed Table of Contents](book/en/README.md) <br>
-[From the Author](book/en/0.1-From-the-Author.md) <br>
-[Endorsements](book/en/0.2-Endorsements.md) <br>
-
-1. [How Multiparadigm Is Expanding Modern Languages](book/en/1.0.-How-Multiparadigm-Is-Expanding-Modern-Languages.md)
-2. [Functional Programming, Type Systems, and Lisp](book/en/2.0-Functional-Programming,-Type-Systems,-and-Lisp.md)
-3. [Code:Object:Function = Generator:Iterator:LISP = IP:OOP:FP](book/en/3.0-Code%3AObject%3AFunction-=-Generator%3AIterator%3ALISP-=-IP%3AOOP%3AFP.md)
-4. Asynchronous Programming
-5. Practical Functional Programming
-6. Multi-Paradigm Programming
-7. Object-Oriented Front-End Development and Multi-Paradigm Approaches in Practice
-
-## 🚀 Quick Menu
-
-- [Project Setup](#%EF%B8%8F-project-setup)
-- [Video ](#-video-course)
-- [License & Copyright](#-license--copyright)
-
-## 🛠️ Project Setup
-
-### Node.js with Volta
-
-[Volta Guide](https://docs.volta.sh/guide/getting-started)
-
-### Unix Installation
-
-```shell
-curl https://get.volta.sh | bash
-volta install node@22
-```
-
-### Windows Installation
-
-```shell
-winget install Volta.Volta
-volta install node@22
-```
-
-### pnpm
-
-[pnpm Guide](https://docs.volta.sh/guide/getting-started)
-
-```bash
-npm install -g pnpm@10
-```
-
-### Installing and Running the Examples
-
-```
-pnpm install
-pnpm -F example dev
-```
-
-Open the terminal, run the code above, and then navigate to http://localhost:2118/.
-
-## 🎥 Video Course 
-
-You can take various video courses related to this book on Inflearn.  
-These courses are conducted in a live coding format, allowing you to see the code evolve in real-time for a more detailed and intuitive learning experience.
-
-The course corresponding to this book will be uploaded at the end of March, coinciding with the official book release.
-
-- Go to the Multi-Paradigm Programming Video Course (in preparation) 🖥️
-
-> Inflearn sponsors the creation of learning content related to "Multi-Paradigm Programming."
->
-> <a href="https://www.inflearn.com/en/"><img alt="MDU" src="./img/inflearn.png" width="140px"></a>
-
-## 📝 Publication
-
-The Korean version of **『Multi-Paradigm Programming』** is published by [Hanbit Media](https://www.hanbit.co.kr/).
-
-## 📜 License & Copyright
-
-All example codes in this repository are licensed under the MIT License. However, the original book text and any text partially disclosed in this repository are licensed under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-> The materials herein are all © 2025 [Marpple Corporation](https://www.marpplecorp.com/).
->
-> <a href="https://www.marpplecorp.com/"><img alt="Marpple Corporation" src="./img/MCO.png" width="200px"></a>
-
+[한국어](#멀티패러다임-프로그래밍) | [English](#multi-paradigm-programming) 
 
 ---
 
 # 멀티패러다임 프로그래밍
 
-객체지향, 함수형, 명령형을 결합한 소프트웨어 개발과 설계
+객체 지향, 함수형, 명령형의 통합적 사고로 구현하는 소프트웨어 설계와 구현
+
+- [미리보기](book/ko/README.md)
 
 ## 📖 책의 목차
 
@@ -190,4 +103,96 @@ pnpm -F example dev
 > 
 > <a href="https://www.marpplecorp.com/"><img alt="Marpple Corporation" src="./img/MCO.png" width="200px"></a>
 
+<br>
+<br>
+
+---
+
+# Multi-Paradigm Programming
+
+Combining Object-Oriented, Functional, and Imperative Approaches for Software Development and Design
+
+- [Get Started](book/en/README.md)
+
+## 📖 Table of Contents (Book)
+
+[View Detailed Table of Contents](book/en/README.md) <br>
+[From the Author](book/en/0.1-From-the-Author.md) <br>
+[Endorsements](book/en/0.2-Endorsements.md) <br>
+
+1. [How Multiparadigm Is Expanding Modern Languages](book/en/1.0.-How-Multiparadigm-Is-Expanding-Modern-Languages.md)
+2. [Functional Programming, Type Systems, and Lisp](book/en/2.0-Functional-Programming,-Type-Systems,-and-Lisp.md)
+3. [Code:Object:Function = Generator:Iterator:LISP = IP:OOP:FP](book/en/3.0-Code%3AObject%3AFunction-=-Generator%3AIterator%3ALISP-=-IP%3AOOP%3AFP.md)
+4. Asynchronous Programming
+5. Practical Functional Programming
+6. Multi-Paradigm Programming
+7. Object-Oriented Front-End Development and Multi-Paradigm Approaches in Practice
+
+## 🚀 Quick Menu
+
+- [Project Setup](#%EF%B8%8F-project-setup)
+- [Video ](#-video-course)
+- [License & Copyright](#-license--copyright)
+
+## 🛠️ Project Setup
+
+### Node.js with Volta
+
+[Volta Guide](https://docs.volta.sh/guide/getting-started)
+
+### Unix Installation
+
+```shell
+curl https://get.volta.sh | bash
+volta install node@22
+```
+
+### Windows Installation
+
+```shell
+winget install Volta.Volta
+volta install node@22
+```
+
+### pnpm
+
+[pnpm Guide](https://docs.volta.sh/guide/getting-started)
+
+```bash
+npm install -g pnpm@10
+```
+
+### Installing and Running the Examples
+
+```
+pnpm install
+pnpm -F example dev
+```
+
+Open the terminal, run the code above, and then navigate to http://localhost:2118/.
+
+## 🎥 Video Course
+
+You can take various video courses related to this book on Inflearn.  
+These courses are conducted in a live coding format, allowing you to see the code evolve in real-time for a more detailed and intuitive learning experience.
+
+The course corresponding to this book will be uploaded at the end of March, coinciding with the official book release.
+
+- Go to the Multi-Paradigm Programming Video Course (in preparation) 🖥️
+
+> Inflearn sponsors the creation of learning content related to "Multi-Paradigm Programming."
+>
+> <a href="https://www.inflearn.com/en/"><img alt="MDU" src="./img/inflearn.png" width="140px"></a>
+
+## 📝 Publication
+
+The Korean version of **『Multi-Paradigm Programming』** is published by [Hanbit Media](https://www.hanbit.co.kr/).
+
+## 📜 License & Copyright
+
+All example codes in this repository are licensed under the MIT License. However, the original book text and any text partially disclosed in this repository are licensed under [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+> The materials herein are all © 2025 [Marpple Corporation](https://www.marpplecorp.com/).
+>
+> <a href="https://www.marpplecorp.com/"><img alt="Marpple Corporation" src="./img/MCO.png" width="200px"></a>
 
