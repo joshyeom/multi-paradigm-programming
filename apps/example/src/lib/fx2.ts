@@ -135,7 +135,7 @@ export class FxIterable<A> {
 
   reduce<Acc>(f: (acc: Acc, a: A) => Acc, acc: Acc): Acc;
   reduce<Acc>(f: (a: A, b: A) => Acc): Acc;
-  reduce<Acc>(f: (a: Acc | A, b: A) => Acc, acc?: Acc): Acc | A {
+  reduce<Acc>(f: (a: Acc | A, b: A) => Acc, acc?: Acc): Acc {
     return acc === undefined
       ? reduce(f, this)
       : reduce(f, acc, this);

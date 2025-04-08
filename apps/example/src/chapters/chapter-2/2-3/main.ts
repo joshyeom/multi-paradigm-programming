@@ -96,7 +96,7 @@ function code_2_34() {
 
     reduce<Acc>(f: (acc: Acc, a: A) => Acc, acc: Acc): Acc; // (1)
     reduce<Acc>(f: (a: A, b: A) => Acc): Acc; // (2)
-    reduce<Acc>(f: (a: Acc | A, b: A) => Acc, acc?: Acc): Acc | A {
+    reduce<Acc>(f: (a: Acc | A, b: A) => Acc, acc?: Acc): Acc {
       return acc === undefined
         ? reduce(f, this.iterable) // (3)
         : reduce(f, acc, this.iterable); // (4)
@@ -273,7 +273,7 @@ function code_2_51() {
 
     reduce<Acc>(f: (acc: Acc, a: A) => Acc, acc: Acc): Acc;
     reduce<Acc>(f: (a: A, b: A) => Acc): Acc;
-    reduce<Acc>(f: (a: Acc | A, b: A) => Acc, acc?: Acc): Acc | A {
+    reduce<Acc>(f: (a: Acc | A, b: A) => Acc, acc?: Acc): Acc {
       return acc === undefined
         ? reduce(f, this)
         : reduce(f, acc, this);
