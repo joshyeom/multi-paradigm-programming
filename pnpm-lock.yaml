@@ -88,8 +88,36 @@ importers:
   apps/example:
     dependencies:
       '@fxts/core':
-        specifier: ^1.7.0
-        version: 1.8.0
+        specifier: ^1.9.0
+        version: 1.9.0
+      '@rune-ts/server':
+        specifier: ^1.0.24
+        version: 1.0.24(@types/node@20.17.14)(mini-css-extract-plugin@2.9.2)(rune-ts@0.8.12)
+      rune-ts:
+        specifier: ^0.8.12
+        version: 0.8.12
+      ua-parser-js:
+        specifier: ^1.0.37
+        version: 1.0.40
+    devDependencies:
+      '@types/animejs':
+        specifier: ^3.1.12
+        version: 3.1.12
+      '@types/express':
+        specifier: ^4.17.21
+        version: 4.17.21
+      '@types/express-serve-static-core':
+        specifier: ^4.17.43
+        version: 4.19.6
+      '@types/ua-parser-js':
+        specifier: ^0.7.39
+        version: 0.7.39
+
+  apps/lecture:
+    dependencies:
+      '@fxts/core':
+        specifier: ^1.9.0
+        version: 1.9.0
       '@rune-ts/server':
         specifier: ^1.0.24
         version: 1.0.24(@types/node@20.17.14)(mini-css-extract-plugin@2.9.2)(rune-ts@0.8.12)
@@ -730,8 +758,8 @@ packages:
     dependencies:
       tslib: 2.8.1
 
-  /@fxts/core@1.8.0:
-    resolution: {integrity: sha512-XyvheL9pc/NBPGACz4v+frjAAbOi2urji08nuS6iH0UIK51EEGvgHheAeOJrLJ7zwwf3Vju4UueswL2DngFAhA==}
+  /@fxts/core@1.9.0:
+    resolution: {integrity: sha512-XNS7DLAL+p1uf3ZS88UvnwUk32tH51ljxSiwdM+Yx9QgICQ2NKKrjSTnTrQD81X7Jk9kIAngLeClWKmDW2ftBg==}
     dependencies:
       tslib: 2.8.1
     dev: false

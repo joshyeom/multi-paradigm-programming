@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "rootDir": "./",
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
-    "lib": ["esnext", "dom", "dom.iterable"],
+    "lib": ["ESNext", "dom", "dom.iterable"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,

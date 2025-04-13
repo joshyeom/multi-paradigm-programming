@@ -57,7 +57,7 @@ volta install node@22
 npm install -g pnpm@10
 ```
 
-### 패키지 설치 및 예제 실행
+### 책 예제 실행
 
 ```
 pnpm install
@@ -65,6 +65,15 @@ pnpm -F example dev
 ```
 
 터미널을 열어 위 코드를 실행한 후 http://localhost:2118/ 로 접속하세요.
+
+### 영상 강의 예제 실행
+
+```
+pnpm install
+pnpm -F lecture dev
+```
+
+터미널을 열어 위 코드를 실행한 후 http://localhost:7000/ 로 접속하세요.
 
 ## 🎥 인프런 영상 강의 
 
@@ -170,6 +179,15 @@ pnpm -F example dev
 ```
 
 Open the terminal, run the code above, and then navigate to http://localhost:2118/.
+
+### Running the Video Course Examples
+
+```
+pnpm install
+pnpm -F example dev
+```
+
+Open the terminal, run the code above, and then navigate to http://localhost:7000/.
 
 ## 🎥 Video Course
 
