@@ -4,9 +4,7 @@
 
 # 멀티패러다임 프로그래밍
 
-객체 지향, 함수형, 명령형의 통합적 사고로 구현하는 소프트웨어 설계와 구현
-
-- [미리보기](book/ko/README.md)
+객체 지향, 함수형, 명령형의 통합적 사고로 구현하는 소프트웨어 설계와 구현 ([보러가기](book/ko/README.md) 🧐)
 
 ## 📖 책의 목차
 
@@ -79,8 +77,6 @@ pnpm -F lecture dev
 
 인프런에서 본 책과 관련된 여러 영상 강의를 수강할 수 있습니다. 특히 라이브 코딩 형식으로 진행되어, 코드가 발전해 나가는 과정을 좀 더 상세하고 직관적으로 볼 수 있습니다.
 
-본 책과 동일한 강의는 3월 말 본책 출간과 함께 업로드될 예정입니다.
-
 - [멀티패러다임 프로그래밍 영상 강의 바로가기](https://www.inflearn.com/course/multi-paradigm-programming) 🖥 
 
 > 인프런에서 "멀티패러다임 프로그래밍" 관련 학습 컨텐츠 제작을 후원합니다.
@@ -119,9 +115,7 @@ pnpm -F lecture dev
 
 # Multi-Paradigm Programming
 
-Combining Object-Oriented, Functional, and Imperative Approaches for Software Development and Design
-
-- [Get Started](book/en/README.md)
+Combining Object-Oriented, Functional, and Imperative Approaches for Software Development and Design ([Get Started](book/en/README.md) 🧐)
 
 ## 📖 Table of Contents (Book)
 
@@ -192,8 +186,6 @@ Open the terminal, run the code above, and then navigate to http://localhost:700
 ## 🎥 Video Course
 
 You can take various video courses related to this book on Inflearn. These courses are conducted in a live coding format, allowing you to see the code evolve in real-time for a more detailed and intuitive learning experience.
-
-The course corresponding to this book will be uploaded at the end of March, coinciding with the official book release.
 
 #### Go to the Multi-Paradigm Programming Video Course 🖥️
 
