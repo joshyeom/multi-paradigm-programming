@@ -81,7 +81,7 @@ pnpm -F lecture dev
 
 본 책과 동일한 강의는 3월 말 본책 출간과 함께 업로드될 예정입니다.
 
-- 멀티패러다임 프로그래밍 영상 강의 바로가기 (준비중) 🖥 
+- [멀티패러다임 프로그래밍 영상 강의 바로가기](https://www.inflearn.com/course/multi-paradigm-programming) 🖥 
 
 > 인프런에서 "멀티패러다임 프로그래밍" 관련 학습 컨텐츠 제작을 후원합니다.
 > 
@@ -191,12 +191,15 @@ Open the terminal, run the code above, and then navigate to http://localhost:700
 
 ## 🎥 Video Course
 
-You can take various video courses related to this book on Inflearn.  
-These courses are conducted in a live coding format, allowing you to see the code evolve in real-time for a more detailed and intuitive learning experience.
+You can take various video courses related to this book on Inflearn. These courses are conducted in a live coding format, allowing you to see the code evolve in real-time for a more detailed and intuitive learning experience.
 
 The course corresponding to this book will be uploaded at the end of March, coinciding with the official book release.
 
-- Go to the Multi-Paradigm Programming Video Course (in preparation) 🖥️
+#### Go to the Multi-Paradigm Programming Video Course 🖥️
+
+- [English](https://www.inflearn.com/en/course/multi-paradigm-programming)
+- [日本語](https://www.inflearn.com/ja/course/multi-paradigm-programming)
+- [Tiếng Việt](https://www.inflearn.com/vi/course/multi-paradigm-programming) 
 
 > Inflearn sponsors the creation of learning content related to "Multi-Paradigm Programming."
 >
