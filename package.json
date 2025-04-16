@@ -53,6 +53,10 @@
     "node": "22.13.0",
     "pnpm": "10.0.0"
   },
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
   "pnpm": {
     "override": {
       "rune-ts": "^0.8.12"
