@@ -6,6 +6,8 @@
 
 객체 지향, 함수형, 명령형의 통합적 사고로 구현하는 소프트웨어 설계와 구현 ([보러가기](book/ko/README.md) 🧐)
 
+<a href="book/ko/README.md"><img alt="inflearn" src="./img/book.jpg" width="140px"></a>
+
 ## 📖 책의 목차
 
 [상세 목차](book/ko/README.md) <br>
@@ -97,6 +99,9 @@ pnpm -F lecture dev
 ## 📝 출판
 
 본 도서 『멀티패러다임 프로그래밍』은 [한빛미디어](https://www.hanbit.co.kr/)에서 출판되었습니다. 본 저장소에 공개된 책 내용은 집필 원고 원본입니다. 더욱 매끄럽게 편집된 글은 종이책 혹은 전자책으로 만나보실 수 있습니다.
+
+- [yes24](https://www.yes24.com/product/goods/145367977)
+- [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=362548794)
 
 > <a href="https://www.hanbit.co.kr/"><img alt="hanbit" src="./img/hanbit_plus.png" width="140px"></a>
 

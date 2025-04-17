@@ -1,6 +1,15 @@
-## 멀티패러다임 프로그래밍과 타입스크립트
+## 멀티패러다임 프로그래밍
 
-함수형, 객체 지향, LISP을 결합한 소프트웨어 설계와 구현
+객체 지향, 함수형, 명령형의 통합적 사고로 구현하는 소프트웨어 설계와 구현
+
+<a href="book/ko/README.md"><img alt="inflearn" src="./img/book.jpg" width="140px"></a>
+
+### 구매하기
+
+- [yes24](https://www.yes24.com/product/goods/145367977)
+- [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=362548794)
+
+### 목차
 
 [지은이의 글](0.1-지은이의-글.md) <br>
 [추천의 글](0.2-추천의-글.md) <br>
