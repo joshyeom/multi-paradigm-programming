@@ -100,6 +100,7 @@ pnpm -F lecture dev
 
 본 도서 『멀티패러다임 프로그래밍』은 [한빛미디어](https://www.hanbit.co.kr/)에서 출판되었습니다. 본 저장소에 공개된 책 내용은 집필 원고 원본입니다. 더욱 매끄럽게 편집된 글은 종이책 혹은 전자책으로 만나보실 수 있습니다.
 
+- [교보문고](https://product.kyobobook.co.kr/detail/S000216318962)
 - [yes24](https://www.yes24.com/product/goods/145367977)
 - [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=362548794)
 

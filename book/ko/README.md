@@ -2,10 +2,13 @@
 
 객체 지향, 함수형, 명령형의 통합적 사고로 구현하는 소프트웨어 설계와 구현
 
+<a href="https://product.kyobobook.co.kr/detail/S000216318962"><img alt="멀티패러다임 프로그래밍" src="../../img/book.jpg" width="140px"></a>
+
+> [교보문고](https://product.kyobobook.co.kr/detail/S000216318962) |
 [yes24](https://www.yes24.com/product/goods/145367977)
 | [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=362548794)
-
-<a href="book/ko/README.md"><img alt="멀티패러다임 프로그래밍" src="../../img/book.jpg" width="140px"></a>
+> 
+> 책의 저자 수익 전액은 서울아산병원 어린이병원에 기부됩니다. 
 
 ### 미리보기
 
