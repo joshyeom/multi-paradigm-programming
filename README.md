@@ -6,7 +6,7 @@
 
 객체 지향, 함수형, 명령형의 통합적 사고로 구현하는 소프트웨어 설계와 구현 ([보러가기](book/ko/README.md) 🧐)
 
-<a href="book/ko/README.md"><img alt="inflearn" src="./img/book.jpg" width="140px"></a>
+<a href="book/ko/README.md"><img alt="멀티패러다임 프로그래밍" src="./img/book.jpg" width="140px"></a>
 
 ## 📖 책의 목차
 
