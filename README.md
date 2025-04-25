@@ -64,7 +64,7 @@ pnpm install
 pnpm -F example dev
 ```
 
-터미널을 열어 위 코드를 실행한 후 http://localhost:2118/ 로 접속하세요.
+터미널을 열어 위 코드를 실행한 후 http://localhost:2118/ 로 접속하세요. 책의 예제 코드 위치는 [/apps/example/src/chapters](./apps/example/src/chapters) 입니다.
 
 ### 영상 강의 예제 설치하고 실행하기
 
@@ -73,7 +73,7 @@ pnpm install
 pnpm -F lecture dev
 ```
 
-터미널을 열어 위 코드를 실행한 후 http://localhost:7000/ 로 접속하세요.
+터미널을 열어 위 코드를 실행한 후 http://localhost:7000/ 로 접속하세요. 영상 강의의 예제 코드 위치는 [/apps/lecture/src/part-*](./apps/lecture/src) 입니다.
 
 ## 🎥 인프런 영상 강의 
 
@@ -178,7 +178,7 @@ pnpm install
 pnpm -F example dev
 ```
 
-Open the terminal, run the code above, and then navigate to http://localhost:2118/.
+Open the terminal, run the code above, and then navigate to http://localhost:2118/. The book’s example code can be found in [/apps/example/src/chapters](./apps/example/src/chapters).
 
 ### Installing and Running the Video Course Examples
 
@@ -187,7 +187,7 @@ pnpm install
 pnpm -F example dev
 ```
 
-Open the terminal, run the code above, and then navigate to http://localhost:7000/.
+The video-lecture example code is located in [/apps/lecture/src/part-*](./apps/lecture/src). Open the terminal, run the code above, and then navigate to http://localhost:7000/.
 
 ## 🎥 Video Course
 
