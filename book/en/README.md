@@ -4,7 +4,7 @@ Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design an
 
 <a href="https://leanpub.com/multi-paradigm-programming"><img alt="Multi-Paradigm Programming" src="../../img/book_en.png" width="140px"></a>
 
-> [Leanpub](https://leanpub.com/multi-paradigm-programming)
+> [Buy on Leanpub](https://leanpub.com/multi-paradigm-programming)
 
 ### Preview
 
