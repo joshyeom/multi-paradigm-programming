@@ -1,6 +1,12 @@
-## Multi-Paradigm Programming with TypeScript
+## Multi-Paradigm Programming
 
 Combining Functional, Object-Oriented, and Lisp Paradigms for Software Design and Implementation
+
+<a href="https://leanpub.com/multi-paradigm-programming"><img alt="Multi-Paradigm Programming" src="../../img/book_en.png" width="140px"></a>
+
+> [Leanpub](https://leanpub.com/multi-paradigm-programming)
+
+### Preview
 
 [From the Author](0.1-From-the-Author.md) <br>
 [Endorsements](0.2-Endorsements.md) <br>

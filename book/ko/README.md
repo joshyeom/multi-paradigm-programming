@@ -6,8 +6,7 @@
 
 > [교보문고](https://product.kyobobook.co.kr/detail/S000216318962) |
 [yes24](https://www.yes24.com/product/goods/145367977)
-| [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=362548794)<br>
-> 책의 저자 수익 전액은 서울아산병원 어린이병원에 기부됩니다. 
+| [알라딘](https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=362548794) 
 
 ### 미리보기
 

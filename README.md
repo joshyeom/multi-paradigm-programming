@@ -1,12 +1,12 @@
 [한국어](#멀티패러다임-프로그래밍) | [English](#multi-paradigm-programming) 
 
+<a href="book/ko/README.md"><img alt="멀티패러다임 프로그래밍" src="./img/book.jpg" height="200px"></a>&nbsp;&nbsp;&nbsp;<a href="book/en/README.md"><img alt="Multi-Paradigm Programming" src="./img/book_en.png" height="200px"></a>
+
 ---
 
 # 멀티패러다임 프로그래밍
 
 객체 지향, 함수형, 명령형의 통합적 사고로 구현하는 소프트웨어 설계와 구현 ([보러가기](book/ko/README.md) 🧐)
-
-<a href="book/ko/README.md"><img alt="멀티패러다임 프로그래밍" src="./img/book.jpg" width="140px"></a>
 
 ## 📖 책의 목차
 

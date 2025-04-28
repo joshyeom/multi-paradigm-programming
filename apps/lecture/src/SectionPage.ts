@@ -32,7 +32,7 @@ export class SectionPage extends Page<object> {
       const name = location.search.replace('?f=', '');
       if (name) {
         this.lessonsMap.get(name)!();
-        (this.element().querySelector(`.${name}`) as HTMLElement).style.background = 'yellow';
+        this.element().querySelector<HTMLElement>(`.${name}`)!.style.background = 'yellow';
       }
     }, 100);
   }
