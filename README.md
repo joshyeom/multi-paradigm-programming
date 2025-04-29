@@ -51,7 +51,7 @@ volta install node@22
 
 ### pnpm
 
-[pnpm Guide](https://docs.volta.sh/guide/getting-started)
+[pnpm Guide](https://pnpm.io/installation)
 
 ```bash
 npm install -g pnpm@10
