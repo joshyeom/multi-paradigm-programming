@@ -4,7 +4,7 @@
 
 ---
 
-# 멀티패러다임 프로그래밍
+# Multi-Paradigm Programming
 
 객체 지향, 함수형, 명령형의 통합적 사고로 구현하는 소프트웨어 설계와 구현 ([보러가기](book/ko/README.md) 🧐)
 
