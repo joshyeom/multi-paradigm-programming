@@ -1,6 +1,6 @@
 [한국어](#멀티패러다임-프로그래밍) | [English](./README.en.md)   
 
-<a href="book/en/README.md"><img alt="Multi-Paradigm Programming" src="./img/book_en.png" height="200px"></a>&nbsp;&nbsp;<a href="book/ko/README.md"><img alt="멀티패러다임 프로그래밍" src="./img/book.jpg" height="200px"></a>&nbsp;
+<a href="book/ko/README.md"><img alt="멀티패러다임 프로그래밍" src="./img/book.jpg" height="200px"></a>&nbsp;&nbsp;&nbsp;<a href="book/en/README.md"><img alt="Multi-Paradigm Programming" src="./img/book_en.png" height="200px"></a>
 
 ---
 
@@ -51,7 +51,7 @@ volta install node@22
 
 ### pnpm
 
-[pnpm Guide](https://docs.volta.sh/guide/getting-started)
+[pnpm Guide](https://pnpm.io/installation)
 
 ```bash
 npm install -g pnpm@10
